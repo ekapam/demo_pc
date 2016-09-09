@@ -1,0 +1,1187 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gro",
+				"GROUP_CONCAT"
+			],
+			[
+				"v",
+				"vcnt_id"
+			],
+			[
+				"res",
+				"resultado_obj"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"vc",
+				"vcnt_status"
+			],
+			[
+				"resul",
+				"resultado"
+			],
+			[
+				"db",
+				"db_get	CI - Active Record DB Get"
+			],
+			[
+				"vcnt_",
+				"vcnt_estado"
+			],
+			[
+				"vaca",
+				"vacantes_array"
+			],
+			[
+				"dos",
+				"dos"
+			],
+			[
+				"vcn",
+				"vcnt_estado"
+			],
+			[
+				"field",
+				"field_type"
+			],
+			[
+				"displa",
+				"display_as"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"Hom",
+				"Home_model"
+			],
+			[
+				"fecha",
+				"fechaPublicacion"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"gest",
+				"gestorInfo"
+			],
+			[
+				"gestion",
+				"gestion_model"
+			],
+			[
+				"reset",
+				"reset_password"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"base_",
+				"base_url"
+			],
+			[
+				"d",
+				"dropdown"
+			],
+			[
+				"servi",
+				"servicio"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"val",
+				"validate_form"
+			],
+			[
+				"css",
+				"css_files"
+			],
+			[
+				"load",
+				"load_view	CI - Load View"
+			],
+			[
+				"sessi",
+				"sessionArray"
+			],
+			[
+				"fec",
+				"fechaPublicacion"
+			],
+			[
+				"last",
+				"last_login"
+			],
+			[
+				"contact",
+				"contactoMapa"
+			],
+			[
+				"lis",
+				"list-group"
+			],
+			[
+				"list",
+				"list-group-item"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"web",
+				"webkit-linear-gradient"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"ti",
+				"titulo"
+			],
+			[
+				"strt",
+				"strtotime"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"site",
+				"site_url"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"bol",
+				"bolsa"
+			],
+			[
+				"tota",
+				"total_numvac"
+			],
+			[
+				"Bolsa",
+				"Bolsa_model"
+			],
+			[
+				"he",
+				"healthy"
+			],
+			[
+				"men",
+				"mes_n"
+			],
+			[
+				"fet",
+				"fetch_module	CI - Fetch Module"
+			],
+			[
+				"fetch",
+				"fetch_method	CI - Fetch Method"
+			],
+			[
+				"ext",
+				"extension"
+			],
+			[
+				"tele",
+				"telefono"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"cont",
+				"contacto"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"region",
+				"region_data"
+			],
+			[
+				"nu",
+				"nuPosition"
+			],
+			[
+				"regio",
+				"region_data"
+			],
+			[
+				"regi",
+				"region_data"
+			],
+			[
+				"lo",
+				"longitud"
+			],
+			[
+				"lat",
+				"latitud"
+			],
+			[
+				"reg",
+				"region_data"
+			],
+			[
+				"capa",
+				"capacitacion"
+			],
+			[
+				"new",
+				"newLocation"
+			],
+			[
+				"map",
+				"map-sucursales"
+			],
+			[
+				"btn",
+				"btn-crsl"
+			],
+			[
+				"bolsa",
+				"bolsa-de-trabajo"
+			],
+			[
+				"cru",
+				"grocery_CRUD"
+			],
+			[
+				"contratacion",
+				"contratacionProfesional"
+			],
+			[
+				"head",
+				"headhunting"
+			],
+			[
+				"terc",
+				"tercerizacion"
+			],
+			[
+				"terce",
+				"Tercerización"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"For",
+				"Formucontacto"
+			],
+			[
+				"stre",
+				"strokeColor"
+			],
+			[
+				"str",
+				"strokeWidth"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"temp",
+				"template_url"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"panel",
+				"panel-heading"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"bt",
+				"btn-collapse-reclu"
+			],
+			[
+				"send",
+				"sendmail"
+			],
+			[
+				"foru",
+				"formuContacto"
+			],
+			[
+				"form",
+				"formuContacto"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"tex-",
+				"text-indent"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"wow",
+				"wowbook"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"r",
+				"rgb()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"car",
+				"carousel-caption"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"asset",
+				"assets"
+			],
+			[
+				"caro",
+				"carousel-inner"
+			],
+			[
+				"base",
+				"base_url"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/Gestion.php",
+			"settings":
+			{
+				"buffer_size": 17172,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/bolsa/vacante.php",
+			"settings":
+			{
+				"buffer_size": 3827,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/Bolsa_model.php",
+			"settings":
+			{
+				"buffer_size": 2000,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/Bolsa.php",
+			"settings":
+			{
+				"buffer_size": 3262,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
+		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
+		"/C/xampp/htdocs/demo/application/models/Home_model.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_tbody.php",
+		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/bolsa.php",
+		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
+		"/C/Users/rambriz/Desktop/puntocom.html",
+		"/C/xampp/htdocs/demo/application/views/home.php",
+		"/C/xampp/htdocs/demo/application/controllers/Home.php",
+		"/C/Users/rambriz/Desktop/4500.m3u8",
+		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/login.php",
+		"/C/xampp/htdocs/demo/application/libraries/Password.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/index.php",
+		"/C/xampp/htdocs/demo/application/controllers/Eventos.php",
+		"/C/xampp/htdocs/demo/application/views/servicios/servicio.php",
+		"/C/xampp/htdocs/demo/assets/js/calendario.js",
+		"/C/xampp/htdocs/demo/application/controllers/Servicios.php",
+		"/C/xampp/htdocs/demo/application/models/Eventos_model.php",
+		"/C/xampp/htdocs/demo/application/views/add_event.php",
+		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
+		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/menu.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/texteditor/ckeditor/config.js",
+		"/C/Users/rambriz/Desktop/Gc_dependent_select.php",
+		"/C/Users/rambriz/Desktop/estados-municipios-localidades-ENE2016-v2.sql_",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/spanish.php",
+		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor_php5.php",
+		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor.php",
+		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor.js",
+		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.201/config.js",
+		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.459/build-config.js",
+		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.930/styles.js",
+		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.770/ckeditor.js",
+		"/C/Users/rambriz/Desktop/config.js",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_template.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/config.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/common_javascript_vars.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
+		"/C/xampp/htdocs/demo/application/views/header.php",
+		"/C/xampp/htdocs/demo/application/views/footer.php",
+		"/C/xampp/htdocs/demo/application/controllers/Events.php",
+		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.es.js",
+		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js",
+		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css",
+		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
+		"/C/xampp/htdocs/cal/bower_components/moment/moment.js",
+		"/C/xampp/htdocs/cal/bower_components/jquery/jquery.min.js",
+		"/C/xampp/htdocs/demo/assets/css/demo.css",
+		"/C/xampp/htdocs/demo/application/controllers/Email_Gestion_Registro.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/email/reset_password.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/email/registro.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/reset_password.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/reset_password.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/register.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/complete.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/crud.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/complete.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/footer.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/forgot.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/banner.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/footer.php",
+		"/C/xampp/htdocs/demo/application/config/config.php",
+		"/C/xampp/htdocs/demo/application/views/menu.php",
+		"/C/xampp/htdocs/demo/assets/js/bolsa.js",
+		"/C/xampp/htdocs/demo/application/controllers/Boletin.php",
+		"/C/xampp/htdocs/demo/assets/css/outdatedbrowser.min.css",
+		"/C/xampp/htdocs/demo/application/views/servicios/servicios.php",
+		"/C/xampp/htdocs/demo/assets/js/servicio.js",
+		"/C/xampp/htdocs/demo/assets/js/boletin_helper.js",
+		"/C/xampp/htdocs/demo/assets/js/calendar.js",
+		"/C/xampp/htdocs/demo/assets/tmpls/month-day.html",
+		"/C/xampp/htdocs/demo/assets/css/calendar.css",
+		"/C/xampp/htdocs/demo/assets/js/servicio2.js",
+		"/C/xampp/htdocs/demo/assets/js/language/es-MX.js",
+		"/C/xampp/htdocs/demo/assets/js/language/es-ES.js",
+		"/C/xampp/htdocs/demo/application/models/Events_model.php",
+		"/C/xampp/htdocs/demo/assets/css/bootstrap-year-calendar.css",
+		"/C/xampp/htdocs/demo/assets/js/bootstrap-year-calendar.js",
+		"/C/Users/rambriz/Desktop/Calendario-master/index2.html",
+		"/C/xampp/htdocs/cal/application/config/database.php",
+		"/C/xampp/htdocs/cal/application/config/config.php",
+		"/C/Users/rambriz/Desktop/jquery-calendar-master/examples/month.html",
+		"/C/Users/rambriz/Desktop/bootstrap_calendar.sql",
+		"/C/xampp/htdocs/demo/assets/css/zabuto_calendar.css",
+		"/C/xampp/htdocs/cal/application/views/add_event.php",
+		"/C/Users/rambriz/Desktop/bootstrap-year-calendar-master/typescript/bootstrap-year-calendar.d.ts",
+		"/C/xampp/htdocs/demo/show_data.php",
+		"/C/xampp/htdocs/cal/examples/action.html",
+		"/C/xampp/htdocs/cal/examples/show_data.php",
+		"/C/xampp/htdocs/cal/bower.json",
+		"/C/xampp/htdocs/cal/index.php",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/action.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/show_data.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/show_data.php",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/set_legend.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/navigation_settings.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/language_settings.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/display_settings.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/index.html",
+		"/C/Users/rambriz/Desktop/calendar-master/examples/basic_usage.html",
+		"/C/xampp/htdocs/demo/application/views/chat.php",
+		"/C/xampp/htdocs/demo/assets/js/servicios.js",
+		"/C/xampp/htdocs/demo/assets/js/privacidad.js",
+		"/C/xampp/htdocs/demo/assets/js/mapa.js",
+		"/C/xampp/htdocs/demo/assets/js/faq.js",
+		"/C/xampp/htdocs/demo/assets/js/contacto.js",
+		"/C/xampp/htdocs/demo/assets/js/home.js",
+		"/C/xampp/htdocs/demo/assets/js/conocenos.js",
+		"/C/xampp161/htdocs/171/system/codeigniter/CodeIgniter.php",
+		"/C/xampp161/htdocs/172/system/codeigniter/CodeIgniter.php",
+		"/C/xampp161/htdocs/171/system/aplicacion/config/constants.php",
+		"/C/xampp161/htdocs/172/system/application/config/constants.php",
+		"/C/xampp/htdocs/171/index.php",
+		"/C/xampp/htdocs/171/system/codeigniter/CodeIgniter.php",
+		"/C/Users/rambriz/Desktop/sistema/codeigniter/CodeIgniter.php",
+		"/C/xampp/htdocs/171/system/aplicacion/config/config.php",
+		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/routes.php",
+		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/database.php",
+		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/autoload.php",
+		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/config.php",
+		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.481/jquery.mobile.icons.min.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open projects>",
+			"C:\\xampp\\htdocs\\demo\\assets\\css",
+			"<open projects>",
+			"<open folders>",
+			"<open projects>",
+			"C:\\xampp\\htdocs\\demo\\application\\views",
+			"<open projects>",
+			"C:\\xampp\\htdocs\\demo\\chat\\design\\defaulttheme\\tpl",
+			"<open projects>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vcnt_categoria",
+			"target",
+			"read",
+			"$datos",
+			"vcnt_status",
+			"unset",
+			"locompro",
+			"gestor_id",
+			"status",
+			"token",
+			"checkLogin",
+			"token",
+			"insertToken",
+			"gestor_id",
+			"Token",
+			"token",
+			"check",
+			"gestorInfo",
+			"gstr_email",
+			"gestorInfo",
+			"checkLogin",
+			"capacitacion",
+			"events",
+			"estados",
+			"candidato_info",
+			"candidatos",
+			"from('candidatos')",
+			"$vac",
+			"salida",
+			"registro",
+			"More",
+			"&#243;",
+			"	<option value=\"[0-9]+\">",
+			"</option>",
+			"	<option value=\"[0-9]+\">",
+			"</option>",
+			"	<option value=\"[0-9]+\">",
+			"</option>",
+			"	<option value=\"[0-9]+\">",
+			"&#241;",
+			"&#225;",
+			"&#237;",
+			"&#233;",
+			"&#243;",
+			"flash_message",
+			"reset",
+			"registro",
+			"reset",
+			"768px",
+			"The login was unsucessful",
+			"bolsa",
+			"candidato",
+			"gestion_model",
+			"candidatoes",
+			"gestor",
+			"candidato",
+			"login",
+			"acceso",
+			"fontawesome",
+			"font-awesome",
+			"awesome",
+			"font-awesome",
+			"font-awesome.css",
+			"fontawesome-webfont.woff?v=4.6.3",
+			"servicio",
+			"title_year",
+			"event-tooltip-content",
+			"México",
+			"col-xs",
+			"col",
+			"col-xs-",
+			"month-container",
+			"bootstrap.min.js",
+			"modal",
+			"$fecha",
+			"year",
+			"myDateFunction",
+			"month",
+			"year",
+			"action",
+			"date-popover-content",
+			"h3",
+			" class=\"label label-<?php echo $color; ?>\"",
+			"//",
+			"calendar",
+			"distinciones",
+			".open",
+			"setTimeout",
+			"setTimeOut",
+			"capacitacion",
+			"calendar",
+			"eventlist",
+			"datetimepicker",
+			"page-header",
+			"cal-slide-box",
+			"<?php echo base_url() ?>",
+			"calendar",
+			"events_model",
+			"getAll",
+			"events",
+			"event",
+			"utf8_spanish_ci",
+			"utf8",
+			"utf8_spanish_ci",
+			"capacitacion",
+			"paddingR",
+			"paddingCero",
+			" style=\"padding:0;\"",
+			"paddingCero",
+			"padding",
+			"0.750s",
+			"0.500s",
+			"sub",
+			"servicio",
+			"jumbotron",
+			"admon",
+			"<div class=\"col-lg-16\">",
+			"<div class=\"col-lg-4\">",
+			"right",
+			"<div class=\"col-lg-14\">",
+			"<div class=\"col-lg-6\">",
+			"h2",
+			"<h2 class=\"text-center\">",
+			"col-lg-15",
+			"col-lg-5",
+			" paddingCero",
+			"col-lg-17",
+			"col-lg-3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$vacante",
+			"eventos",
+			"categories",
+			"ó",
+			"",
+			"ñ",
+			"á",
+			"í",
+			"é",
+			"ó",
+			"gestion",
+			"candidatos",
+			"candidato",
+			"$date",
+			"h2",
+			"",
+			"http://",
+			"",
+			"eventos_model",
+			"utf8_general_ci",
+			"utf8_unicode_ci",
+			"utf_8",
+			"utf-8",
+			"utf8",
+			"",
+			"0.500s",
+			"0.750s",
+			"<div class=\"col-lg-16 col-md-16 col-sm-16\">",
+			"<div class=\"col-lg-4 col-md-4 col-sm-4\">",
+			"<div class=\"col-lg-16\">",
+			"<div class=\"col-lg-4\">",
+			"h3",
+			"<h2 class=\"text-right\">",
+			"col-lg-14",
+			"col-lg-6",
+			"",
+			"col-lg-15",
+			"col-lg-5",
+			"<li class=\"list-group-item\"><p class=\"text-center\">",
+			"</a></p></li>",
+			"</p></a></li>\n                                    <li class=\"list-group-item\"><p><a",
+			"<p class=\"list-group-item-text\"></p>",
+			"footer",
+			"servicios/busqueda-de-talento",
+			"servicios/talento/",
+			"gestores",
+			"gestorInfo",
+			"gestor_",
+			"gestorInfo",
+			"gestor_info",
+			"gestor_id",
+			"gestion/",
+			"gestion_model",
+			"<i class=\"glyphicon glyphicon-menu-right\"></i>",
+			"servicios/footer",
+			"$this->load->view('servicios/servicio',$data);",
+			"formulario/formulario",
+			"formulario",
+			"formulario/",
+			"Formulario",
+			"footer",
+			"header",
+			"footer",
+			"header",
+			"crud",
+			"view('candidato/",
+			"",
+			"javascript:(null);",
+			"</a></li>",
+			"<li class=\"list-group-item\"><a href=\"javascript:(void);\">",
+			"",
+			".container > footer > ",
+			".conocenos",
+			"home",
+			"lang=\"ES\"",
+			"",
+			"btns",
+			"outterWidth",
+			"<?php echo ",
+			"; ?>",
+			" ?>",
+			"<?php ",
+			"// $data['chat'] = $this->load->view('chat', $data, TRUE);",
+			"",
+			"encabezado",
+			"",
+			"paginacion",
+			"numVacantes",
+			"vacantes",
+			"</a>",
+			"Bolsa_model",
+			"Home_model",
+			"$vac",
+			"vacantes",
+			"<br/>",
+			"",
+			"20",
+			"<p class=\"text-justify\">",
+			"array\\(\"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\", \"[a-z]+\"\\);",
+			"margin",
+			"",
+			"contacto",
+			"png",
+			"<p>",
+			"<p class=\"text-justify\">",
+			"img-responsive img-circle center-block",
+			"jpg",
+			"$this->load->view('servicios_footer',$data);",
+			"sucursales",
+			"img-responsive center-block",
+			"telefonos",
+			"<path id",
+			"<path group",
+			"<div class=\"col-lg-13 col-md-13 col-sm-13\">",
+			"fadeInUp",
+			"fadeInDown",
+			"<td style=\"word-break:break-all; border-collapse: collapse;",
+			"<tr style=\"border-collapse: collapse;\"",
+			"<td style=\"word-break:break-all;\"",
+			"http://peopleconnection.mx/email/16/07/",
+			"",
+			"<td style=\"word-break:break-all;\"",
+			"http://peopleconnection.mx/email/16/07/",
+			"http://peopleconnection.mx/email/16/06/",
+			"",
+			"listado_publico",
+			"<?php echo base_url(); ?>",
+			"<?php echo base_url(); ?>/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/Gestion.php",
+					"settings":
+					{
+						"buffer_size": 17172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2697,
+								2697
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/bolsa/vacante.php",
+					"settings":
+					{
+						"buffer_size": 3827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2219,
+								2219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/models/Bolsa_model.php",
+					"settings":
+					{
+						"buffer_size": 2000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1935,
+								1935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controllers/Bolsa.php",
+					"settings":
+					{
+						"buffer_size": 3262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2057,
+								2057
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"application/models/Candidato_model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/xampp/htdocs/grocerycrud/grocerycrud.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true
+}
