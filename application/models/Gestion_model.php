@@ -10,7 +10,7 @@ class Gestion_model extends CI_Model {
 		$this->status = $this->config->item('gestor_status');
 	}    
 	
-	public function insertUser($d) {  
+	public function insertUser($d) {
 			$string = array(
 				'gstr_first_name'=>$d['firstname'],
 				'gstr_last_name'=>$d['lastname'],
@@ -33,8 +33,8 @@ class Gestion_model extends CI_Model {
 		
 		$string = array(
 				'tkn_token'=> $token,
-				'tkn_es_cnd'=>'-1',
 				'tkn_es_gstr'=>$gestor_id,
+				'tkn_es_cnd'=>'-1',
 				'tkn_created'=>$date
 			);
 		$query = $this->db->insert_string('tokens',$string);

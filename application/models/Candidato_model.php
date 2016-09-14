@@ -32,10 +32,10 @@ class Candidato_model extends CI_Model {
 		$date = date('Y-m-d H:i:s');
 		
 		$string = array(
-				'token'=> $token,
-				'gestor_id'=>'-1',
-				'candidato_id'=>$candidato_id,
-				'created'=>$date
+				'tkn_token'=> $token,
+				'tkn_es_gstr'=>'-1',
+				'tkn_es_cnd'=>$candidato_id,
+				'tkn_created'=>$date
 			);
 		$query = $this->db->insert_string('tokens',$string);
 		$this->db->query($query);
@@ -44,11 +44,11 @@ class Candidato_model extends CI_Model {
 	}
 	
 	public function isTokenValid($token) {
-		$q = $this->db->get_where('tokens', array('token' => $token), 1);
+		$q = $this->db->get_where('tokens', array('tkn_token' => $token), 1);
 		if($this->db->affected_rows() > 0) {
 			$row = $q->row();
 			
-			$created = $row->created;
+			$created = $row->tkn_created;
 			$createdTS = strtotime($created);
 			$createdTSplusOne = $createdTS+3600;
 			$today = date('Y-m-d H:i:s'); 
@@ -58,7 +58,7 @@ class Candidato_model extends CI_Model {
 				return false;
 			}
 			
-			$candidato_info = $this->getUserInfo($row->candidato_id);
+			$candidato_info = $this->getUserInfo($row->tkn_es_cnd);
 			return $candidato_info;
 			
 		}
@@ -106,14 +106,14 @@ class Candidato_model extends CI_Model {
 		$query = $this->db->get('candidatos');
 		$candidatoInfo = $query->row();
 		
-		if(!$this->password->validate_password($post['password'], $candidatoInfo->password)){
+		if(!$this->password->validate_password($post['password'], $candidatoInfo->cnd_password)){
 			error_log('Unsuccessful login attempt ('.$post['email'].')');
 			return false;
 		}
 		
-		$this->updateLoginTime($candidatoInfo->id);
+		$this->updateLoginTime($candidatoInfo->cnd_id);
 		
-		unset($candidatoInfo->password);
+		unset($candidatoInfo->cnd_password);
 		return $candidatoInfo;
 	}
 	

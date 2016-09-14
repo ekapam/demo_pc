@@ -16,5 +16,5 @@
                 <?php echo form_close(); ?>
                 <p>&nbsp;</p>
                 <p>Si no estas registrado, <a href="<?php echo site_url('candidato/registro');?>">haz click aquí para registrarte</a></p>
-                <p>¿Has olvidado la contraseña? <a href="<?php echo site_url('candidato/recuperar'); ?>">Click aqui</a>.</p>
+                <p>¿Has olvidado la contraseña? <a href="<?php echo site_url('candidato/restablecer'); ?>">Click aqui</a>.</p>
             </div>

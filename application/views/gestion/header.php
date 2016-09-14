@@ -21,6 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php echo $titulo; ?></title>
 	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="">
 	<base href="<?php echo site_url(); ?>" />
 	<link rel="icon" href="assets/favicon.ico">
 
@@ -38,14 +39,7 @@
 		#page-loader .preloader-interior:after { content: ""; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: 3px solid transparent; border-top-color: #F68428; -webkit-animation: spin 1.5s linear infinite; animation: spin 1.5s linear infinite; }
 		@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
 		@keyframes spin { 0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
-		body > div.bg-warning.container.flash-message {
-			padding: 15px 10px;
-			border: 1px solid #E9E2C0;
-			border-radius: 4px;
-			width: 80%;
-			margin: 0 auto;
-			display: block;
-		}
+		.flash-message { padding: 15px 10px; border: 1px solid #E9E2C0; border-radius: 4px; width: 80%; margin: 0 auto; display: block; }
 	</style>
 </head>
 <body>

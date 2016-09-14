@@ -87,12 +87,12 @@ class Gestion extends CI_Controller {
 			$this->load->view('gestion/footer');
 		}
 		else {
-			
+
 			$post = $this->input->post();  
 			$clean = $this->security->xss_clean($post);
-			
+
 			$gestorInfo = $this->gestion_model->checkLogin($clean);
-			
+
 			if(!$gestorInfo) {
 				$this->session->set_flashdata('flash_message', 'Acceso denegado, por favor revisa tus datos.');
 				redirect(site_url().'gestion/acceso');
@@ -106,13 +106,13 @@ class Gestion extends CI_Controller {
 	}
 		
 	public function registro() {
-		 
+
 		$this->form_validation->set_rules('firstname', 'First Name', 'required');
 		$this->form_validation->set_rules('lastname', 'Last Name', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		if ($this->form_validation->run() == FALSE) {
-			$data['titulo'] = "Registro";
+			$data['titulo'] = "Registro de Gestor";
 			$this->load->view('gestion/header',$data);
 			$this->load->view('gestion/register');
 			$this->load->view('gestion/footer');
@@ -206,6 +206,7 @@ class Gestion extends CI_Controller {
 		$data = array(
 			'firstName'=> $gestor_info->gstr_first_name,
 			'email'=>$gestor_info->gstr_email,
+			'candidato_id'=>'',
 			'gestor_id'=>$gestor_info->gstr_id,
 			'token'=>base64_encode($token)
 		);
@@ -247,14 +248,9 @@ class Gestion extends CI_Controller {
 		}
 	}
 
-	public function salir() {
-		$this->session->sess_destroy();
-		redirect(site_url().'gestion/acceso/');
-	}
-	
 	public function restablecer() {
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email'); 
-		
+
 		if($this->form_validation->run() == FALSE) {
 			$data['titulo'] = "Restablecer password | People Connection";
 			$this->load->view('gestion/header', $data);
@@ -265,12 +261,12 @@ class Gestion extends CI_Controller {
 			$email = $this->input->post('email');
 			$clean = $this->security->xss_clean($email);
 			$gestorInfo = $this->gestion_model->getUserInfoByEmail($clean);
-			
+
 			if(!$gestorInfo) {
 				$this->session->set_flashdata('flash_message', 'El correo ingresado no esta registrado.');
 				redirect(site_url().'gestion/acceso');
 			}
-			
+
 			if($gestorInfo->gstr_status != $this->status[1]) { //if status is not approved
 				$this->session->set_flashdata('flash_message', 'Tu registro esta pendiente de aprobación.');
 				redirect(site_url().'gestion/acceso');
@@ -339,13 +335,13 @@ class Gestion extends CI_Controller {
 			// redirect(site_url().'gestion/acceso');
 		}
 	}
-	
+
 	public function reset() {
 		$token = base64_decode($this->uri->segment(4));
 		$cleanToken = $this->security->xss_clean($token);
-		
+
 		$gestor_info = $this->gestion_model->isTokenValid($cleanToken); //either false or array();
-		
+
 		if(!$gestor_info){
 			$this->session->set_flashdata('flash_message', 'La URL ha caducado, por favor restablece tu password de nuevo.');
 			redirect(site_url().'gestion/acceso');
@@ -356,7 +352,7 @@ class Gestion extends CI_Controller {
 			'gestor_id'=>$gestor_info->gstr_id,
 			'token'=>base64_encode($token)
 		);
-		
+
 		$this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
 		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
 		
@@ -383,4 +379,10 @@ class Gestion extends CI_Controller {
 			redirect(site_url().'gestion/acceso');
 		}
 	}
+
+	public function salir() {
+		$this->session->sess_destroy();
+		redirect(site_url().'gestion/acceso/');
+	}
+
 }

@@ -519,38 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "application/controllers/Gestion.php",
-			"settings":
-			{
-				"buffer_size": 17172,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/bolsa/vacante.php",
-			"settings":
-			{
-				"buffer_size": 3827,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/models/Bolsa_model.php",
-			"settings":
-			{
-				"buffer_size": 2000,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "application/controllers/Bolsa.php",
-			"settings":
-			{
-				"buffer_size": 3262,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -576,19 +544,31 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/grocerycrud/.gitignore",
+		"/C/xampp/htdocs/demo/index.php",
+		"/C/xampp/htdocs/jobstuts/application/config/database.php",
+		"/C/xampp/htdocs/jobstuts/index.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
+		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
+		"/C/xampp/htdocs/jobstuts/application/config/config.php",
+		"/C/xampp/htdocs/smartjobboard/system/admin-scripts/payment/products.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
 		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
+		"/C/xampp/htdocs/demo/.git/refs/remotes/origin/master",
+		"/C/xampp/htdocs/demo/.git/logs/refs/heads/master",
+		"/C/xampp/htdocs/demo/.git/logs/refs/remotes/origin/master",
+		"/C/Users/rambriz/Desktop/veloccasion.sql",
 		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
+		"/C/xampp/htdocs/demo/application/models/my_grocery_model.php",
 		"/C/xampp/htdocs/demo/application/models/Home_model.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_tbody.php",
 		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/bolsa.php",
-		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
 		"/C/Users/rambriz/Desktop/puntocom.html",
 		"/C/xampp/htdocs/demo/application/views/home.php",
 		"/C/xampp/htdocs/demo/application/controllers/Home.php",
 		"/C/Users/rambriz/Desktop/4500.m3u8",
-		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/login.php",
 		"/C/xampp/htdocs/demo/application/libraries/Password.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
@@ -619,7 +599,6 @@
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_template.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/config.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/common_javascript_vars.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
 		"/C/xampp/htdocs/demo/application/views/header.php",
 		"/C/xampp/htdocs/demo/application/views/footer.php",
@@ -692,18 +671,7 @@
 		"/C/xampp/htdocs/demo/assets/js/home.js",
 		"/C/xampp/htdocs/demo/assets/js/conocenos.js",
 		"/C/xampp161/htdocs/171/system/codeigniter/CodeIgniter.php",
-		"/C/xampp161/htdocs/172/system/codeigniter/CodeIgniter.php",
-		"/C/xampp161/htdocs/171/system/aplicacion/config/constants.php",
-		"/C/xampp161/htdocs/172/system/application/config/constants.php",
-		"/C/xampp/htdocs/171/index.php",
-		"/C/xampp/htdocs/171/system/codeigniter/CodeIgniter.php",
-		"/C/Users/rambriz/Desktop/sistema/codeigniter/CodeIgniter.php",
-		"/C/xampp/htdocs/171/system/aplicacion/config/config.php",
-		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/routes.php",
-		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/database.php",
-		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/autoload.php",
-		"/C/Users/rambriz/Desktop/sistema/aplicacion/config/config.php",
-		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.481/jquery.mobile.icons.min.css"
+		"/C/xampp161/htdocs/172/system/codeigniter/CodeIgniter.php"
 	],
 	"find":
 	{
@@ -730,6 +698,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"where",
 			"vcnt_categoria",
 			"target",
 			"read",
@@ -856,8 +825,7 @@
 			"col-lg-15",
 			"col-lg-5",
 			" paddingCero",
-			"col-lg-17",
-			"col-lg-3"
+			"col-lg-17"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1003,118 +971,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "application/controllers/Gestion.php",
-					"settings":
-					{
-						"buffer_size": 17172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2697,
-								2697
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 273.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/bolsa/vacante.php",
-					"settings":
-					{
-						"buffer_size": 3827,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2219,
-								2219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/models/Bolsa_model.php",
-					"settings":
-					{
-						"buffer_size": 2000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1935,
-								1935
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "application/controllers/Bolsa.php",
-					"settings":
-					{
-						"buffer_size": 3262,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2057,
-								2057
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 780.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

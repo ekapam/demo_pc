@@ -9,7 +9,7 @@ class Candidato extends CI_Controller {
 		$this->load->model('Candidato_model', 'candidato_model', TRUE);
 		$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
 		$this->status = $this->config->item('candidato_status');
-	}      
+	}
 	
 	public function index() {
 			if(empty($this->session->userdata['cnd_email'])){
@@ -23,18 +23,44 @@ class Candidato extends CI_Controller {
 			$this->load->view('candidato/index', $data);
 			$this->load->view('candidato/footer',$datos);
 	}
-		
-		
-	public function registro() {
-		if(isset($this->session->userdata['email'])){
+
+	public function acceso() {
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+		$this->form_validation->set_rules('password', 'Password', 'required'); 
+
+		if($this->form_validation->run() == FALSE) {
+			$data['titulo'] = "Acceso";
+			$this->load->view('candidato/header',$data);
+			$this->load->view('candidato/login');
+			$this->load->view('candidato/footer');
+		}
+		else {
+
+			$post = $this->input->post();  
+			$clean = $this->security->xss_clean($post);
+
+			$candidatoInfo = $this->candidato_model->checkLogin($clean);
+
+			if(!$candidatoInfo) {
+				$this->session->set_flashdata('flash_message', 'Hubo un problema con el acceso, por favor, verifique sus datos e intente de nuevo.');
+				redirect(site_url().'candidato/acceso');
+			}
+			foreach($candidatoInfo as $key=>$val) {
+				$this->session->set_userdata($key, $val);
+			}
 			redirect(site_url().'candidato/');
 		}
+	}
+	
+	public function registro() {
+
 		$this->form_validation->set_rules('firstname', 'First Name', 'required');
 		$this->form_validation->set_rules('lastname', 'Last Name', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('candidato/header');
+			$data['titulo'] = "Registro de Candidato";
+			$this->load->view('candidato/header',$data);
 			$this->load->view('candidato/register');
 			$this->load->view('candidato/footer');
 		}
@@ -51,7 +77,9 @@ class Candidato extends CI_Controller {
 				$qstring = base64_encode($token);
 				$url = site_url() . 'candidato/confirmar/token/' . $qstring;
 				$link = '<a href="' . $url . '">' . $url . '</a>';
+				$para = $this->input->post('firstname');
 
+				$this->load->view('candidato/email/registro', compact('url','para'));
 				// $de_email = "no_reply@peopleconnection.mx";
 				// $nombre = "People Connection";
 				// $asunto = "Te haz registrado como Candidato";
@@ -96,12 +124,12 @@ class Candidato extends CI_Controller {
 				// $this->session->set_flashdata('flash_message', 'Gracias, por favor revisa la bandeja de entrada del correo registrado, en algunas ocaciones puede llegar a la bandeja de correo no deseado.');
 				// redirect(site_url().'candidato/acceso');
 
-				$message = '';
-				$message .= '<strong>Confirmar</strong><br>';
-				$message .= 'Link: ' . $link;
+				// $message = '';
+				// $message .= '<strong>Confirmar</strong><br>';
+				// $message .= 'Link: ' . $link;
 
-				echo $message; //send this through mail
-				exit;
+				// echo $message; //send this through mail
+				// exit;
 			}
 		}
 	}
@@ -111,16 +139,13 @@ class Candidato extends CI_Controller {
 	// }
 
 	public function confirmar() {
-		if(isset($this->session->userdata['email'])){
-			redirect(site_url().'candidato/');
-		}
 		$token = base64_decode($this->uri->segment(4));
 		$cleanToken = $this->security->xss_clean($token);
 
 		$candidato_info = $this->candidato_model->isTokenValid($cleanToken); //either false or array();
 
 		if(!$candidato_info){
-			$this->session->set_flashdata('flash_message', 'Token invalido ó expirado.');
+			$this->session->set_flashdata('flash_message', 'La URL ha caducado, por favor restablece tu password.');
 			redirect(site_url().'candidato/acceso');
 		}
 
@@ -136,7 +161,8 @@ class Candidato extends CI_Controller {
 		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
 		
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('candidato/header');
+			$data['titulo'] = "Confirmar Registro Candidato";
+			$this->load->view('candidato/header', $data);
 			$this->load->view('candidato/complete', $data);
 			$this->load->view('candidato/footer');
 		}
@@ -167,52 +193,13 @@ class Candidato extends CI_Controller {
 			redirect(site_url().'candidato/');
 		}
 	}
-	
-	public function acceso() {
-		if(isset($this->session->userdata['email'])){
-			redirect(site_url().'candidato/');
-		}
-		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-		$this->form_validation->set_rules('password', 'Password', 'required'); 
-		
-		if($this->form_validation->run() == FALSE) {
-			$data['titulo'] = "Acceso";
-			$this->load->view('candidato/header',$data);
-			$this->load->view('candidato/login');
-			$this->load->view('candidato/footer');
-		}
-		else {
-			
-			$post = $this->input->post();  
-			$clean = $this->security->xss_clean($post);
-			
-			$candidatoInfo = $this->candidato_model->checkLogin($clean);
-			
-			if(!$candidatoInfo) {
-				$this->session->set_flashdata('flash_message', 'Hubo un problema con el acceso, por favor, verifique sus datos e intente de nuevo.');
-				redirect(site_url().'candidato/acceso');
-			}                
-			foreach($candidatoInfo as $key=>$val) {
-				$this->session->set_userdata($key, $val);
-			}
-			redirect(site_url().'candidato/');
-		}
-		
-	}
-	
-	public function salir() {
-		$this->session->sess_destroy();
-		redirect(site_url().'candidato/acceso/');
-	}
-	
-	public function recuperar() {
-		if(isset($this->session->userdata['email'])){
-			redirect(site_url().'candidato/');
-		}
+
+	public function restablecer() {
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email'); 
 		
 		if($this->form_validation->run() == FALSE) {
-			$this->load->view('candidato/header');
+			$data['titulo'] = "Restablecer contraseña";
+			$this->load->view('candidato/header',$data);
 			$this->load->view('candidato/forgot');
 			$this->load->view('candidato/footer');
 		}
@@ -226,14 +213,14 @@ class Candidato extends CI_Controller {
 				redirect(site_url().'candidato/acceso');
 			}
 			
-			if($candidatoInfo->status != $this->status[1]) { //if status is not approved
+			if($candidatoInfo->cnd_status != $this->status[1]) { //if status is not approved
 				$this->session->set_flashdata('flash_message', 'Aun no haz confirmado tu cuenta, por favor verifica tu bandeja de entrada.');
 				redirect(site_url().'candidato/acceso');
 			}
 			
 			//build token 
 			
-			$token = $this->candidato_model->insertToken($candidatoInfo->id);
+			$token = $this->candidato_model->insertToken($candidatoInfo->cnd_id);
 			$qstring = base64_encode($token);
 			$url = site_url() . 'candidato/reset/token/' . $qstring;
 			$link = '<a href="' . $url . '">' . $url . '</a>';
@@ -292,9 +279,6 @@ class Candidato extends CI_Controller {
 	}
 	
 	public function reset() {
-		if(isset($this->session->userdata['email'])){
-			redirect(site_url().'candidato/');
-		}
 		$token = base64_decode($this->uri->segment(4));
 		$cleanToken = $this->security->xss_clean($token);
 		
@@ -315,7 +299,8 @@ class Candidato extends CI_Controller {
 		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
 		
 		if ($this->form_validation->run() == FALSE) {
-			$this->load->view('candidato/header');
+			$data['titulo'] = "Restablecer password | People Connection";
+			$this->load->view('candidato/header',$data);
 			$this->load->view('candidato/reset_password', $data);
 			$this->load->view('candidato/footer');
 		}
@@ -336,4 +321,10 @@ class Candidato extends CI_Controller {
 			redirect(site_url().'candidato/acceso');
 		}
 	}
+
+	public function salir() {
+		$this->session->sess_destroy();
+		redirect(site_url().'candidato/acceso/');
+	}
+
 }
