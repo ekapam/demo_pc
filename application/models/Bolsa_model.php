@@ -17,10 +17,11 @@ class Bolsa_model extends CI_Model {
 			vcnt_titulo,
 			vcnt_fecha,
 			GROUP_CONCAT(estados.std_nombre) as vcnt_estado,
-			GROUP_CONCAT(municipios.mncps_nombre) as vcnt_ciudad
+			GROUP_CONCAT(municipios.mncps_nombre) as vcnt_ciudad,
+			GROUP_CONCAT(vac_jornada.vac_jorn_value) as vcnt_jornada
 			');
-		$this->db->from('vacantes,estados,municipios');
-		$this->db->where("vcnt_status='1' AND vcnt_estado=std_id AND vcnt_ciudad=mncps_id");
+		$this->db->from('vacantes,estados,municipios,vac_jornada');
+		$this->db->where("vcnt_status='1' AND vcnt_estado=std_id AND vcnt_ciudad=mncps_id AND vcnt_jornada=vac_jorn_id");
 		$this->db->group_by('vcnt_id');
 		$this->db->order_by('vcnt_id', 'desc');
 		$this->db->limit(10, $offset);
@@ -56,16 +57,17 @@ class Bolsa_model extends CI_Model {
 			vcnt_descripcion,
 			GROUP_CONCAT(estados.std_nombre) as vcnt_estado,
 			GROUP_CONCAT(municipios.mncps_nombre) as vcnt_ciudad,
-			GROUP_CONCAT(vacantes_att.att_value) as vcnt_categoria,
+			GROUP_CONCAT(vac_categorias.vac_cat_value) as vcnt_categoria,
+			GROUP_CONCAT(vac_jornada.vac_jorn_value) as vcnt_jornada,
+			GROUP_CONCAT(vac_educacion.vac_educ_value) as vcnt_educacion,
 			vcnt_sueldo,
-			vcnt_jornada,
+			vcnt_sueldo_convenir,
 			vcnt_cantidad,
-			vcnt_educacion,
 			vcnt_experiencia,
 			vcnt_idioma
 			');
-		$this->db->from('vacantes,vacantes_att,estados,municipios');
-		$this->db->where("vcnt_id=".$id." AND vcnt_estado=std_id AND vcnt_ciudad=mncps_id AND vcnt_categoria=att_id");
+		$this->db->from('vacantes,vac_educacion,vac_jornada,vac_categorias,estados,municipios');
+		$this->db->where("vcnt_id=".$id." AND vcnt_estado=std_id AND vcnt_ciudad=mncps_id AND vcnt_categoria=vac_cat_id AND vcnt_jornada=vac_jorn_id AND vcnt_educacion=vac_educ_id");
 		$query = $this->db->get();
 		return $query->result();
 	}

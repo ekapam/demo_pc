@@ -15,7 +15,7 @@ class Gestion extends CI_Controller {
 		if (empty($this->session->userdata['gstr_email'])) {
 			redirect(site_url().'gestion/acceso/');
 		}
-		$data = $this->session->userdata;
+		$session = $this->session->userdata;
 		$crud = new grocery_CRUD();
 		$this->load->library('gc_dependent_select');
 		$crud->set_table('vacantes');
@@ -23,23 +23,32 @@ class Gestion extends CI_Controller {
 		$crud->unset_delete();
 		$crud->unset_read();
 		$crud->order_by('vcnt_id','desc');
-		$crud->display_as(array('vcnt_id'=>'ID','vcnt_status'=>'Estatus','vcnt_fecha'=>'Fecha y Hora','vcnt_sueldo'=>'Sueldo','vcnt_estado'=>'Estado','vcnt_ciudad'=>'Ciudad / Localidad','vcnt_categoria'=>'Categoria','vcnt_jornada'=>'Jornada','vcnt_cantidad'=>'Cantidad de Vacantes','vcnt_titulo'=>'Titulo','vcnt_descripcion'=>'Descripción','vcnt_educacion'=>'Educación mínima','vcnt_experiencia'=>'Experiencia mínima','vcnt_idioma'=>'Idioma'));
+		$crud->display_as(array('vcnt_id'=>'ID','vcnt_status'=>'Activo?','vcnt_fecha'=>'Fecha y Hora','vcnt_sueldo'=>'Sueldo','vcnt_sueldo_convenir'=>'Mostrar sueldo a convenir?','vcnt_estado'=>'Estado','vcnt_ciudad'=>'Ciudad / Localidad','vcnt_categoria'=>'Categoria','vcnt_jornada'=>'Jornada','vcnt_cantidad'=>'Cantidad de Vacantes','vcnt_titulo'=>'Titulo','vcnt_descripcion'=>'Descripción','vcnt_educacion'=>'Educación mínima','vcnt_experiencia'=>'Experiencia mínima','vcnt_idioma'=>'Idioma'));
 		$crud->columns('vcnt_id','vcnt_status','vcnt_fecha','vcnt_titulo','vcnt_descripcion','vcnt_categoria');
 
-		$crud->required_fields('vcnt_titulo','vcnt_estado','vcnt_localidad','vcnt_jornada','vcnt_sueldo','vcnt_descripcion','vcnt_educacion','vcnt_experiencia','vcnt_cantidad');
+		$crud->required_fields('vcnt_status','vcnt_titulo','vcnt_estado','vcnt_ciudad','vcnt_categoria','vcnt_jornada','vcnt_sueldo','vcnt_descripcion','vcnt_educacion','vcnt_experiencia','vcnt_cantidad');
 		$fechaHoy = date('Y-m-d H:i:s',now()+3600);
 		$crud->field_type('vcnt_fecha', 'hidden', $fechaHoy);
 		$crud->field_type('vcnt_status', 'true_false');
 		$crud->field_type('vcnt_sueldo', 'integer');
 		$crud->field_type('vcnt_cantidad','enum', range(1, 9));
-		$crud->field_type('vcnt_educacion','enum', array('Educación primaria','Educación secundaria','Educación media superior -Bachillerato General','Educación media superior - Educación Profesional Técnica'));
 		$crud->field_type('vcnt_experiencia','enum', array('Sin experiencia','1 año','2 años','3 años'));
+
+		// $state = $crud->getState();
+		// $state_info = $crud->getStateInfo();
+
+		// if($state == 'add') {
+		// 	print_r($state);
+		// }
+		// elseif($state == 'list') {
+		// 	print_r($state);
+		// }
 
 		$crud->set_relation('vcnt_estado', 'estados', 'std_nombre');
 		$crud->set_relation('vcnt_ciudad', 'municipios', 'mncps_nombre');
-
-		$crud->set_primary_key('att_id','vacantes_att');
-		$crud->set_relation('vcnt_categoria', 'vacantes_att', 'att_value');
+		$crud->set_relation('vcnt_categoria', 'vac_categorias', 'vac_cat_value');
+		$crud->set_relation('vcnt_jornada', 'vac_jornada', 'vac_jorn_value');
+		$crud->set_relation('vcnt_educacion', 'vac_educacion', 'vac_educ_value', null, 'vac_educ_id ASC');
 
 		$this->load->library('Gc_dependent_select');
 
@@ -55,7 +64,7 @@ class Gestion extends CI_Controller {
 				'id_field' => 'mncps_id', // table of state: primary key
 				'relate' => 'mncps_std_id', // table of state:
 				'data-placeholder' => 'Seleccionar Ciudad / Localidad', //dropdown's data-placeholder:
-				'order_by'=>"mncps_nombre ASC",
+				'order_by' => 'mncps_nombre ASC'
 			)
 		);
 
@@ -72,8 +81,8 @@ class Gestion extends CI_Controller {
 
 		$salida = get_object_vars($output);
 		$titulo = "Gestor de vacantes | People Connection";
-
-		$this->load->view('gestion/crud',compact('salida','titulo','data'));
+		$menu = $this->load->view('gestion/menu', NULL, TRUE);
+		$this->load->view('gestion/crud',compact('salida','titulo','menu'));
 	}
 
 	public function acceso() {

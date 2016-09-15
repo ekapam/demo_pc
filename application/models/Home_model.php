@@ -6,9 +6,10 @@ class Home_model extends CI_Model {
 		$query = $this->db->query("SELECT
 			vcnt_id, vcnt_jornada, vcnt_titulo, vcnt_fecha,
 			GROUP_CONCAT(`estados`.`std_nombre`) as `vcnt_estado`,
-			GROUP_CONCAT(`municipios`.`mncps_nombre`) as `vcnt_ciudad`
-			FROM `vacantes`,`estados`,`municipios`
-			WHERE `vacantes`.`vcnt_status`= '1' AND `vacantes`.`vcnt_estado`=`estados`.`std_id` AND `vacantes`.`vcnt_ciudad`=`municipios`.`mncps_id`
+			GROUP_CONCAT(`municipios`.`mncps_nombre`) as `vcnt_ciudad`,
+			GROUP_CONCAT(`vac_jornada`.`vac_jorn_value`) as `vcnt_jornada`
+			FROM `vacantes`,`estados`,`municipios`,`vac_jornada`
+			WHERE `vacantes`.`vcnt_status`= '1' AND `vacantes`.`vcnt_estado`=`estados`.`std_id` AND `vacantes`.`vcnt_ciudad`=`municipios`.`mncps_id` AND `vacantes`.`vcnt_jornada`=`vac_jornada`.`vac_jorn_id`
 			GROUP BY `vacantes`.`vcnt_id`
 			ORDER BY `vacantes`.`vcnt_id` DESC
 			LIMIT 5");

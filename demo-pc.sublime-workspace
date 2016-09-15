@@ -519,6 +519,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/views/candidato/header.php",
+			"settings":
+			{
+				"buffer_size": 4421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/candidato/footer.php",
+			"settings":
+			{
+				"buffer_size": 1999,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/candidato/index.php",
+			"settings":
+			{
+				"buffer_size": 464,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -544,15 +568,31 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/demo/application/config/config.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/footer.php",
+		"/C/xampp/htdocs/demo/application/views/404.php",
+		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
+		"/C/xampp/htdocs/demo/application/controllers/Mi404.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
+		"/C/xampp/htdocs/demo/application/config/database.php",
+		"/C/Users/rambriz/Desktop/ci_sessions-data.bin",
+		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
+		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
+		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
+		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/login.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/forgot.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/reset_password.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/email/registro.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
 		"/C/xampp/htdocs/grocerycrud/.gitignore",
 		"/C/xampp/htdocs/demo/index.php",
 		"/C/xampp/htdocs/jobstuts/application/config/database.php",
 		"/C/xampp/htdocs/jobstuts/index.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
-		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
 		"/C/xampp/htdocs/jobstuts/application/config/config.php",
 		"/C/xampp/htdocs/smartjobboard/system/admin-scripts/payment/products.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
 		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
 		"/C/xampp/htdocs/demo/.git/refs/remotes/origin/master",
@@ -563,7 +603,6 @@
 		"/C/xampp/htdocs/demo/application/models/my_grocery_model.php",
 		"/C/xampp/htdocs/demo/application/models/Home_model.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_tbody.php",
-		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/bolsa.php",
 		"/C/Users/rambriz/Desktop/puntocom.html",
 		"/C/xampp/htdocs/demo/application/views/home.php",
@@ -579,11 +618,7 @@
 		"/C/xampp/htdocs/demo/application/controllers/Servicios.php",
 		"/C/xampp/htdocs/demo/application/models/Eventos_model.php",
 		"/C/xampp/htdocs/demo/application/views/add_event.php",
-		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
-		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/menu.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/texteditor/ckeditor/config.js",
 		"/C/Users/rambriz/Desktop/Gc_dependent_select.php",
 		"/C/Users/rambriz/Desktop/estados-municipios-localidades-ENE2016-v2.sql_",
@@ -599,7 +634,6 @@
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_template.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/config.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/common_javascript_vars.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
 		"/C/xampp/htdocs/demo/application/views/header.php",
 		"/C/xampp/htdocs/demo/application/views/footer.php",
 		"/C/xampp/htdocs/demo/application/controllers/Events.php",
@@ -613,17 +647,14 @@
 		"/C/xampp/htdocs/demo/application/controllers/Email_Gestion_Registro.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/email/reset_password.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/email/registro.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/reset_password.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/reset_password.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/register.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/complete.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/crud.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/complete.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/footer.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/forgot.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/banner.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/footer.php",
-		"/C/xampp/htdocs/demo/application/config/config.php",
 		"/C/xampp/htdocs/demo/application/views/menu.php",
 		"/C/xampp/htdocs/demo/assets/js/bolsa.js",
 		"/C/xampp/htdocs/demo/application/controllers/Boletin.php",
@@ -664,14 +695,7 @@
 		"/C/Users/rambriz/Desktop/calendar-master/examples/basic_usage.html",
 		"/C/xampp/htdocs/demo/application/views/chat.php",
 		"/C/xampp/htdocs/demo/assets/js/servicios.js",
-		"/C/xampp/htdocs/demo/assets/js/privacidad.js",
-		"/C/xampp/htdocs/demo/assets/js/mapa.js",
-		"/C/xampp/htdocs/demo/assets/js/faq.js",
-		"/C/xampp/htdocs/demo/assets/js/contacto.js",
-		"/C/xampp/htdocs/demo/assets/js/home.js",
-		"/C/xampp/htdocs/demo/assets/js/conocenos.js",
-		"/C/xampp161/htdocs/171/system/codeigniter/CodeIgniter.php",
-		"/C/xampp161/htdocs/172/system/codeigniter/CodeIgniter.php"
+		"/C/xampp/htdocs/demo/assets/js/privacidad.js"
 	],
 	"find":
 	{
@@ -679,7 +703,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"<open projects>",
@@ -698,6 +722,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$content",
+			"gestor",
+			"status",
+			"candidato_status",
+			"restablecer",
+			"recuperar",
+			"isTokenValid",
+			"Token invalido ó expirado.",
+			"isTokenValid",
+			"acceso()",
+			"acceso",
+			"salir",
+			"registro",
+			"Token invalido ó expirado.",
+			"isTokenValid",
 			"where",
 			"vcnt_categoria",
 			"target",
@@ -810,22 +849,7 @@
 			"paddingCero",
 			"padding",
 			"0.750s",
-			"0.500s",
-			"sub",
-			"servicio",
-			"jumbotron",
-			"admon",
-			"<div class=\"col-lg-16\">",
-			"<div class=\"col-lg-4\">",
-			"right",
-			"<div class=\"col-lg-14\">",
-			"<div class=\"col-lg-6\">",
-			"h2",
-			"<h2 class=\"text-center\">",
-			"col-lg-15",
-			"col-lg-5",
-			" paddingCero",
-			"col-lg-17"
+			"0.500s"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -833,6 +857,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"gestion",
 			"$vacante",
 			"eventos",
 			"categories",
@@ -959,8 +984,7 @@
 			"http://peopleconnection.mx/email/16/06/",
 			"",
 			"listado_publico",
-			"<?php echo base_url(); ?>",
-			"<?php echo base_url(); ?>/"
+			"<?php echo base_url(); ?>"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -971,8 +995,92 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/views/candidato/header.php",
+					"settings":
+					{
+						"buffer_size": 4421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/candidato/footer.php",
+					"settings":
+					{
+						"buffer_size": 1999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1177,
+								1177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/candidato/index.php",
+					"settings":
+					{
+						"buffer_size": 464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								444,
+								444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

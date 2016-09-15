@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title><?php if(isset($titulo)) { echo $titulo; } ?></title>
+	<base href="<?php echo site_url(); ?>" />
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php foreach($salida['css_files'] as $file): ?>
@@ -11,19 +12,14 @@
 <?php foreach($salida['js_files'] as $file): ?>
 	<script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
+	<style type="text/css">
+	.container.gestion { margin-top: 65px; }
+	.navbar-brand { padding: 15px 0px; }
+	</style>
 </head>
 <body>
-<?php if(isset($_SESSION['gstr_email'])) : ?>
-	<div class="container">
-		<div class="row">
-			<div class="clearfix">&nbsp;</div>
-		    <h2>Gestion de Vacantes</h2>
-		    <p>Hola, <?php echo $_SESSION['gstr_first_name']; ?></p>
-		    <p><a href="<?php echo site_url('gestion/salir'); ?>">Logout</a></p>
-		</div>
-	</div>
-<?php endif; ?>
-	<div class="container">
+<?php if(isset($menu)) { echo $menu; } ?>
+	<div class="container gestion">
 		<div class="row">
 <?php echo $salida['output']; ?>
 		</div>
