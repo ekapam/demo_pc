@@ -124,7 +124,7 @@
 								<tr>
 									<th colspan="2" <?php if ($buttons_counter === 0) : ?>class="hidden"<?php endif; ?>><?php echo $this->l('list_actions'); ?></th>
 <?php foreach($columns as $column) : ?>
-									<th class="column-with-ordering" data-order-by="<?php echo $column->field_name; ?>"><?php echo $column->display_as; ?></th>
+									<th class="column-with-ordering" data-order-by="<?php echo $column->field_name; ?>" id="column_<?php echo $column->field_name; ?>"><?php echo $column->display_as; ?></th>
 <?php endforeach;?>
 								</tr>
 								
@@ -154,7 +154,7 @@
 									</td>
 <?php foreach($columns as $column):?>
 									<td>
-										<input type="text" class="form-control searchable-input floatL" placeholder="Search <?php echo $column->display_as; ?>" name="<?php echo $column->field_name; ?>" />
+										<input type="text" class="form-control searchable-input floatL" placeholder="Buscar por <?php echo $column->display_as; ?>" name="<?php echo $column->field_name; ?>" />
 									</td>
 <?php endforeach; ?>
 								</tr>

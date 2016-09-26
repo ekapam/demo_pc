@@ -6,6 +6,7 @@
 */
 $config['candidato_status'] = array('pendiente', 'confirmado');
 $config['gestor_status'] = array('pendiente', 'confirmado');
+$config['gestor_nivel'] = array('0','1','666');
 $config['dias'] = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
 $config['meses'] = array("Diciembre","Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre");
 
@@ -86,7 +87,8 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+// $config['language']	= 'english';
+$config['language']	= 'spanish';
 
 /*
 |--------------------------------------------------------------------------

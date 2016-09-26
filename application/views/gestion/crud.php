@@ -15,6 +15,14 @@
 	<style type="text/css">
 	.container.gestion { margin-top: 65px; }
 	.navbar-brand { padding: 15px 0px; }
+	span.required { color:#d80e18; }
+	.form-group.separador_dg_form_group { padding: 10px; margin: 0 -10px 20px -10px; background-color: #18A245; }
+	.form-group.separador_req_form_group { padding: 10px; margin: 0 -10px 20px -10px; background-color: #006495; }
+	#label_separador_dg, #label_separador_req { font-size: 1.3em; padding: 0; color:#fff; font-weight: bold; padding-right: 20px; }
+	#column_vcnt_id, #column_vcnt_status { width: 50px; }
+	#crudForm > div > div > div.pretty-radio-buttons > div.radio { display: inline-block; margin-right: 10px; }
+	.form-control { display: inline-block; width: 50%; }
+	#field-vcnt_cantidad { width: 55px; }
 	</style>
 </head>
 <body>

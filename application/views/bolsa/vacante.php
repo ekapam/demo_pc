@@ -29,13 +29,16 @@
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Sueldo:</div>
 <?php if ($vacante->vcnt_sueldo_convenir==TRUE) : ?>
-							<div class="datos">A Convenir</div>    
+							<div class="datos">A Convenir</div>
 <?php else : ?>
 							<div class="datos">&dollar; <?php echo number_format($vacante->vcnt_sueldo,2); ?> MXN Mensuales</div>
 <?php endif; ?>
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Categoria:</div>
 							<div class="datos"><?php echo $vacante->vcnt_categoria; ?></div>
+							<div class="clearfix">&nbsp;</div>
+							<div class="encabezado">Tipo de Contrato:</div>
+							<div class="datos"><?php echo $vacante->vcnt_contrato; ?></div>
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Ubicación:</div>
 							<div class="datos"><?php echo $vacante->vcnt_ciudad . ', ' . $vacante->vcnt_estado; ?></div>
@@ -48,10 +51,10 @@
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Nivel de estudios requerido:</div>
 							<div class="datos">Educación <?php echo $vacante->vcnt_educacion; ?> o superior.</div>
-<?php if (!empty($vacante->vcnt_idioma)) : ?>
+<?php if (!empty($vacante->vcnt_idiomas)) : ?>
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Idioma requerido:</div>
-							<div class="datos"><?php echo $vacante->vcnt_idioma; ?></div>
+							<div class="datos"><?php echo $vacante->vcnt_idiomas; ?></div>
 <?php endif; ?>
 						</div>
 						<div id="sidebar-postulate" class="well">
@@ -64,6 +67,5 @@
 		</div>
 
 	</div>
-
 
 <!--Fin Vacante-->

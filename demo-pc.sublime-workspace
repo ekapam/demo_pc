@@ -4,6 +4,154 @@
 		"selected_items":
 		[
 			[
+				"vcnt_rango_",
+				"vcnt_rango_edad_b"
+			],
+			[
+				"rango",
+				"rango_b"
+			],
+			[
+				"vcnt_ra",
+				"vcnt_rango_edad_b"
+			],
+			[
+				"true",
+				"true_false"
+			],
+			[
+				"vcnt_re",
+				"vcnt_residencia"
+			],
+			[
+				"id_ge",
+				"id_gestor_en_vacante"
+			],
+			[
+				"gest",
+				"gestor_id"
+			],
+			[
+				"gestor_",
+				"gestor_id"
+			],
+			[
+				"vac_jorn",
+				"vac_jorn_value"
+			],
+			[
+				"db",
+				"db_limit	CI - Active Record DB Helper Functions"
+			],
+			[
+				"mns",
+				"mncps_nombre"
+			],
+			[
+				"vcn",
+				"vcnt_titulo"
+			],
+			[
+				"sueld",
+				"sueldo_array"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"state",
+				"state_info"
+			],
+			[
+				"primary",
+				"primary_key"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"vac_ex",
+				"vac_expe_value"
+			],
+			[
+				"vac_cont",
+				"vac_cont_value"
+			],
+			[
+				"vac_edu",
+				"vac_educacion"
+			],
+			[
+				"vcnt_",
+				"vcnt_fecha"
+			],
+			[
+				"vcnt",
+				"vcnt_status"
+			],
+			[
+				"vcnt_id",
+				"vcnt_idioma"
+			],
+			[
+				"vcnt_sueld",
+				"vcnt_sueldo_convenir"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"vcnt_c",
+				"vcnt_ciudad"
+			],
+			[
+				"vc",
+				"vcnt_educacion"
+			],
+			[
+				"vac_",
+				"vac_educ_id"
+			],
+			[
+				"vac_educ_",
+				"vac_educ_value"
+			],
+			[
+				"vac_ed",
+				"vac_educ_value"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"primar",
+				"primary_key"
+			],
+			[
 				"gro",
 				"GROUP_CONCAT"
 			],
@@ -20,20 +168,8 @@
 				"array"
 			],
 			[
-				"vc",
-				"vcnt_status"
-			],
-			[
 				"resul",
 				"resultado"
-			],
-			[
-				"db",
-				"db_get	CI - Active Record DB Get"
-			],
-			[
-				"vcnt_",
-				"vcnt_estado"
 			],
 			[
 				"vaca",
@@ -42,10 +178,6 @@
 			[
 				"dos",
 				"dos"
-			],
-			[
-				"vcn",
-				"vcnt_estado"
 			],
 			[
 				"field",
@@ -68,14 +200,6 @@
 				"fechaPublicacion"
 			],
 			[
-				"st",
-				"strong	Tag"
-			],
-			[
-				"gest",
-				"gestorInfo"
-			],
-			[
 				"gestion",
 				"gestion_model"
 			],
@@ -86,10 +210,6 @@
 			[
 				"end",
 				"endif"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"ba",
@@ -152,16 +272,8 @@
 				"list-group-item"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"bor",
 				"border-bottom"
-			],
-			[
-				"tex",
-				"text-decoration"
 			],
 			[
 				"th",
@@ -176,20 +288,12 @@
 				"webkit-linear-gradient"
 			],
 			[
-				"margin",
-				"margin-left"
-			],
-			[
 				"ti",
 				"titulo"
 			],
 			[
 				"strt",
 				"strtotime"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"co",
@@ -410,139 +514,11 @@
 			[
 				"margi",
 				"margin-left"
-			],
-			[
-				"tex-",
-				"text-indent"
-			],
-			[
-				"pa",
-				"padding"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"wow",
-				"wowbook"
-			],
-			[
-				"fot",
-				"font-size"
-			],
-			[
-				"h",
-				"h1	Tag"
-			],
-			[
-				"r",
-				"rgb()"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"wi",
-				"width"
-			],
-			[
-				"con",
-				"container"
-			],
-			[
-				"ma",
-				"margin-bottom"
-			],
-			[
-				"car",
-				"carousel-caption"
-			],
-			[
-				"l",
-				"line-height"
-			],
-			[
-				"marg",
-				"margin"
-			],
-			[
-				"ta",
-				"table"
-			],
-			[
-				"in",
-				"inline-block"
-			],
-			[
-				"min-",
-				"min-width"
-			],
-			[
-				"tabl",
-				"table-cell"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"nav",
-				"navbar"
-			],
-			[
-				"rgb",
-				"rgba()"
-			],
-			[
-				"s",
-				"script	Tag"
-			],
-			[
-				"asset",
-				"assets"
-			],
-			[
-				"caro",
-				"carousel-inner"
-			],
-			[
-				"base",
-				"base_url"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "application/views/candidato/header.php",
-			"settings":
-			{
-				"buffer_size": 4421,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/candidato/footer.php",
-			"settings":
-			{
-				"buffer_size": 1999,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/candidato/index.php",
-			"settings":
-			{
-				"buffer_size": 464,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -568,61 +544,79 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
+		"/C/xampp/htdocs/demo/assets/css/demo.css",
+		"/C/xampp/htdocs/demo/application/views/bolsa/banner.php",
+		"/C/Users/rambriz/Desktop/CodeIgniter-Web-Application-Blueprints-master/Chapter 05/SQL/signups.sql",
+		"/C/xampp/htdocs/cinco/application/config/config.php",
+		"/C/xampp/htdocs/demo/assets/js/home.js",
+		"/C/xampp/htdocs/demo/application/views/home.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
+		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
+		"/C/xampp/htdocs/demo/application/controllers/Home.php",
 		"/C/xampp/htdocs/demo/application/config/config.php",
+		"/C/xampp/htdocs/blog/application/config/database.php",
+		"/C/xampp/htdocs/blog/application/config/config.php",
+		"/C/Users/rambriz/Desktop/ci_sessions-data.bin",
+		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
+		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
+		"/C/xampp/htdocs/job/application/config/config.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/add.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/edit.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_template.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_tbody.php",
+		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
+		"/C/xampp/htdocs/demo/application/models/Home_model.php",
+		"/C/xampp/htdocs/demo/application/models/Eventos_model.php",
+		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
+		"/C/xampp/htdocs/demo/application/libraries/Grocery_CRUD.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
+		"/C/xampp/htdocs/demo/application/views/vacante.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/spanish.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/english.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/footer.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
+		"/C/xampp/htdocs/demo/application/views/header.php",
+		"/C/xampp/htdocs/demo/application/views/menu.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/footer.php",
 		"/C/xampp/htdocs/demo/application/views/404.php",
 		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
 		"/C/xampp/htdocs/demo/application/controllers/Mi404.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
 		"/C/xampp/htdocs/demo/application/config/database.php",
-		"/C/Users/rambriz/Desktop/ci_sessions-data.bin",
-		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
-		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
-		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
-		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/login.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/forgot.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/reset_password.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/email/registro.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
 		"/C/xampp/htdocs/grocerycrud/.gitignore",
 		"/C/xampp/htdocs/demo/index.php",
 		"/C/xampp/htdocs/jobstuts/application/config/database.php",
 		"/C/xampp/htdocs/jobstuts/index.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
 		"/C/xampp/htdocs/jobstuts/application/config/config.php",
 		"/C/xampp/htdocs/smartjobboard/system/admin-scripts/payment/products.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
-		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
 		"/C/xampp/htdocs/demo/.git/refs/remotes/origin/master",
 		"/C/xampp/htdocs/demo/.git/logs/refs/heads/master",
 		"/C/xampp/htdocs/demo/.git/logs/refs/remotes/origin/master",
 		"/C/Users/rambriz/Desktop/veloccasion.sql",
-		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
 		"/C/xampp/htdocs/demo/application/models/my_grocery_model.php",
-		"/C/xampp/htdocs/demo/application/models/Home_model.php",
-		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_tbody.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/bolsa.php",
 		"/C/Users/rambriz/Desktop/puntocom.html",
-		"/C/xampp/htdocs/demo/application/views/home.php",
-		"/C/xampp/htdocs/demo/application/controllers/Home.php",
 		"/C/Users/rambriz/Desktop/4500.m3u8",
 		"/C/xampp/htdocs/demo/application/views/gestion/login.php",
 		"/C/xampp/htdocs/demo/application/libraries/Password.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/index.php",
 		"/C/xampp/htdocs/demo/application/controllers/Eventos.php",
 		"/C/xampp/htdocs/demo/application/views/servicios/servicio.php",
 		"/C/xampp/htdocs/demo/assets/js/calendario.js",
 		"/C/xampp/htdocs/demo/application/controllers/Servicios.php",
-		"/C/xampp/htdocs/demo/application/models/Eventos_model.php",
 		"/C/xampp/htdocs/demo/application/views/add_event.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/menu.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/texteditor/ckeditor/config.js",
 		"/C/Users/rambriz/Desktop/Gc_dependent_select.php",
 		"/C/Users/rambriz/Desktop/estados-municipios-localidades-ENE2016-v2.sql_",
-		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/spanish.php",
 		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor_php5.php",
 		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor.php",
 		"/C/xampp/htdocs/grocerycrud/assets/grocery_crud/texteditor/ckeditor/ckeditor.js",
@@ -631,10 +625,8 @@
 		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.930/styles.js",
 		"/C/Users/rambriz/AppData/Local/Temp/Rar$DIa0.770/ckeditor.js",
 		"/C/Users/rambriz/Desktop/config.js",
-		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list_template.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/config.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/common_javascript_vars.php",
-		"/C/xampp/htdocs/demo/application/views/header.php",
 		"/C/xampp/htdocs/demo/application/views/footer.php",
 		"/C/xampp/htdocs/demo/application/controllers/Events.php",
 		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.es.js",
@@ -643,7 +635,6 @@
 		"/C/xampp/htdocs/cal/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css",
 		"/C/xampp/htdocs/cal/bower_components/moment/moment.js",
 		"/C/xampp/htdocs/cal/bower_components/jquery/jquery.min.js",
-		"/C/xampp/htdocs/demo/assets/css/demo.css",
 		"/C/xampp/htdocs/demo/application/controllers/Email_Gestion_Registro.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/email/reset_password.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/email/registro.php",
@@ -653,9 +644,6 @@
 		"/C/xampp/htdocs/demo/application/views/bolsa/crud.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/complete.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/forgot.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/banner.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/footer.php",
-		"/C/xampp/htdocs/demo/application/views/menu.php",
 		"/C/xampp/htdocs/demo/assets/js/bolsa.js",
 		"/C/xampp/htdocs/demo/application/controllers/Boletin.php",
 		"/C/xampp/htdocs/demo/assets/css/outdatedbrowser.min.css",
@@ -683,19 +671,7 @@
 		"/C/xampp/htdocs/cal/examples/action.html",
 		"/C/xampp/htdocs/cal/examples/show_data.php",
 		"/C/xampp/htdocs/cal/bower.json",
-		"/C/xampp/htdocs/cal/index.php",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/action.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/show_data.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/show_data.php",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/set_legend.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/navigation_settings.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/language_settings.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/display_settings.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/index.html",
-		"/C/Users/rambriz/Desktop/calendar-master/examples/basic_usage.html",
-		"/C/xampp/htdocs/demo/application/views/chat.php",
-		"/C/xampp/htdocs/demo/assets/js/servicios.js",
-		"/C/xampp/htdocs/demo/assets/js/privacidad.js"
+		"/C/xampp/htdocs/cal/index.php"
 	],
 	"find":
 	{
@@ -703,7 +679,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"<open projects>",
@@ -722,6 +698,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n",
+			"Carrusel",
+			"50%",
+			"vcnt_cantidad",
+			" ',",
+			"<!-- Start of hidden inputs -->",
+			"hidden",
+			"vcnt_id",
+			"$this->status",
+			"->status",
+			"status",
+			"gestor_status",
+			"checkLogin",
+			"session",
+			"state_info",
+			"pretty-radio-buttons",
+			"radio",
+			"Jornada Laboral",
+			"vac_categorias",
+			" = ",
+			"`",
+			"=",
+			"vac_categorias",
+			"search",
+			"data-order-by",
+			"vcnt_idioma",
+			"vcnt_idiomas",
+			"vcnt_idioma",
+			"vcnt_sueldo_convenir",
+			"candidato",
+			"session",
 			"$content",
 			"gestor",
 			"status",
@@ -818,38 +825,7 @@
 			"month",
 			"year",
 			"action",
-			"date-popover-content",
-			"h3",
-			" class=\"label label-<?php echo $color; ?>\"",
-			"//",
-			"calendar",
-			"distinciones",
-			".open",
-			"setTimeout",
-			"setTimeOut",
-			"capacitacion",
-			"calendar",
-			"eventlist",
-			"datetimepicker",
-			"page-header",
-			"cal-slide-box",
-			"<?php echo base_url() ?>",
-			"calendar",
-			"events_model",
-			"getAll",
-			"events",
-			"event",
-			"utf8_spanish_ci",
-			"utf8",
-			"utf8_spanish_ci",
-			"capacitacion",
-			"paddingR",
-			"paddingCero",
-			" style=\"padding:0;\"",
-			"paddingCero",
-			"padding",
-			"0.750s",
-			"0.500s"
+			"date-popover-content"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -857,6 +833,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"CarruselBolsa",
+			"vac_categoria",
+			"=",
+			"",
+			" = ",
+			"vac_categoria",
+			"vcnt_idiomas",
+			"gestion",
+			"data",
 			"gestion",
 			"$vacante",
 			"eventos",
@@ -975,16 +960,7 @@
 			"fadeInUp",
 			"fadeInDown",
 			"<td style=\"word-break:break-all; border-collapse: collapse;",
-			"<tr style=\"border-collapse: collapse;\"",
-			"<td style=\"word-break:break-all;\"",
-			"http://peopleconnection.mx/email/16/07/",
-			"",
-			"<td style=\"word-break:break-all;\"",
-			"http://peopleconnection.mx/email/16/07/",
-			"http://peopleconnection.mx/email/16/06/",
-			"",
-			"listado_publico",
-			"<?php echo base_url(); ?>"
+			"<tr style=\"border-collapse: collapse;\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -995,92 +971,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "application/views/candidato/header.php",
-					"settings":
-					{
-						"buffer_size": 4421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								978,
-								978
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 195.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "application/views/candidato/footer.php",
-					"settings":
-					{
-						"buffer_size": 1999,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1177,
-								1177
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "application/views/candidato/index.php",
-					"settings":
-					{
-						"buffer_size": 464,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								444,
-								444
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1148,6 +1040,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 267.0,
+	"side_bar_width": 250.0,
 	"status_bar_visible": true
 }

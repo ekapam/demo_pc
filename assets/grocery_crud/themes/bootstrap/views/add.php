@@ -16,7 +16,6 @@
         $this->set_js_config($this->default_theme_path.'/bootstrap/js/form/add.js');
     }
 
-
 include(__DIR__ . '/common_javascript_vars.php');
 ?>
 <div class="crud-form" data-unique-hash="<?php echo $unique_hash; ?>">
@@ -27,12 +26,12 @@ include(__DIR__ . '/common_javascript_vars.php');
                     <div class="floatL l5">
                         <?php echo $this->l('form_add'); ?> <?php echo $subject?>
                     </div>
-                    <div class="floatR r5 minimize-maximize-container minimize-maximize">
+                    <!-- <div class="floatR r5 minimize-maximize-container minimize-maximize">
                         <i class="fa fa-caret-up"></i>
                     </div>
                     <div class="floatR r5 gc-full-width">
                         <i class="fa fa-expand"></i>
-                    </div>
+                    </div> -->
                     <div class="clear"></div>
                 </div>
                 <div class="form-container table-container">
@@ -40,8 +39,8 @@ include(__DIR__ . '/common_javascript_vars.php');
 
                             <?php foreach($fields as $field) { ?>
                                 <div class="form-group <?php echo $field->field_name; ?>_form_group">
-                                    <label class="col-sm-5 control-label">
-                                        <?php echo $input_fields[$field->field_name]->display_as; ?><?php echo ($input_fields[$field->field_name]->required) ? "<span class='required'>*</span> " : ""; ?>
+                                    <label class="col-sm-5 control-label" id="label_<?php echo $field->field_name; ?>">
+                                        <?php echo $input_fields[$field->field_name]->display_as; ?><?php echo ($input_fields[$field->field_name]->required) ? "<span class='required'> *</span> " : ""; ?>
                                     </label>
                                     <div class="col-sm-15">
                                         <?php echo $input_fields[$field->field_name]->input?>

@@ -1,8 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Gestion extends CI_Controller {
-		
+
 	public $gestor_status;
+	public $rango_b;
 
 	function __construct() {
 		parent::__construct();
@@ -15,40 +16,231 @@ class Gestion extends CI_Controller {
 		if (empty($this->session->userdata['gstr_email'])) {
 			redirect(site_url().'gestion/acceso/');
 		}
-		$session = $this->session->userdata;
+		elseif ($this->session->userdata['gstr_nivel']==0) {
+			$this->session->set_flashdata('flash_message', 'Acceso denegado, activación necesaria.');
+			redirect(site_url().'gestion/acceso/');
+		}
 		$crud = new grocery_CRUD();
-		$this->load->library('gc_dependent_select');
-		$crud->set_table('vacantes');
-		$crud->set_subject('Vacante');
 		$crud->unset_delete();
 		$crud->unset_read();
-		$crud->order_by('vcnt_id','desc');
-		$crud->display_as(array('vcnt_id'=>'ID','vcnt_status'=>'Activo?','vcnt_fecha'=>'Fecha y Hora','vcnt_sueldo'=>'Sueldo','vcnt_sueldo_convenir'=>'Mostrar sueldo a convenir?','vcnt_estado'=>'Estado','vcnt_ciudad'=>'Ciudad / Localidad','vcnt_categoria'=>'Categoria','vcnt_jornada'=>'Jornada','vcnt_cantidad'=>'Cantidad de Vacantes','vcnt_titulo'=>'Titulo','vcnt_descripcion'=>'Descripción','vcnt_educacion'=>'Educación mínima','vcnt_experiencia'=>'Experiencia mínima','vcnt_idioma'=>'Idioma'));
+		$crud->set_table('vacantes');
+		$crud->set_subject('Vacante');
+		$gstr_id = $this->session->userdata['gstr_id'];
+		$crud->where('vcnt_gestor_id',$gstr_id);
+
+		$state = $crud->getState();
+		$state_info = $crud->getStateInfo();
+		$session = $this->session->userdata;
+
+		// print_r($session);
+
 		$crud->columns('vcnt_id','vcnt_status','vcnt_fecha','vcnt_titulo','vcnt_descripcion','vcnt_categoria');
-
-		$crud->required_fields('vcnt_status','vcnt_titulo','vcnt_estado','vcnt_ciudad','vcnt_categoria','vcnt_jornada','vcnt_sueldo','vcnt_descripcion','vcnt_educacion','vcnt_experiencia','vcnt_cantidad');
-		$fechaHoy = date('Y-m-d H:i:s',now()+3600);
-		$crud->field_type('vcnt_fecha', 'hidden', $fechaHoy);
+		$crud->display_as(
+			array(
+				'vcnt_id'=>'ID',
+				'vcnt_status'=>'Visible',
+				'vcnt_fecha'=>'Fecha y Hora',
+				'vcnt_titulo'=>'Titulo',
+				'vcnt_categoria'=>'Categoria',
+				'vcnt_descripcion'=>'Descripción',
+				'vcnt_estado'=>'Estado',
+				'vcnt_ciudad'=>'Ciudad / Localidad',
+				'vcnt_jornada'=>'Jornada Laboral',
+				'vcnt_contrato'=>'Tipo de contrato',
+				'vcnt_sueldo'=>'Sueldo (neto mensual)',
+				'vcnt_sueldo_convenir'=>'Mostrar el salario "A convenir"',
+				'vcnt_fecha_contratacion'=>'Fecha de Contratación',
+				'vcnt_cantidad'=>'Cantidad de vacantes',
+				'vcnt_experiencia'=>'Años de experiencia similar',
+				'vcnt_rango_edad_a' => 'Rango de Edad',
+				'vcnt_educacion'=>'Estudios mínimos',
+				'vcnt_idiomas'=>'Idiomas',
+				'vcnt_licencia' => 'Licencia de conducir',
+				'vcnt_viajar' => 'Disponibilidad para viajar',
+				'vcnt_residencia' => 'Disponiblidad para cambiar de residencia',
+				'vcnt_discapacidad' => 'Personas con discapacidad',
+				'vcnt_requisitos' => 'Requisitos',
+				'vcnt_oferta' => 'Ofrecemos',
+				'vcnt_horario' => 'Horario de Trabajo',
+				'vcnt_gestor_id' => 'ID Gestor'
+			)
+		);
+		$crud->order_by('vcnt_id','desc');
 		$crud->field_type('vcnt_status', 'true_false');
-		$crud->field_type('vcnt_sueldo', 'integer');
-		$crud->field_type('vcnt_cantidad','enum', range(1, 9));
-		$crud->field_type('vcnt_experiencia','enum', array('Sin experiencia','1 año','2 años','3 años'));
 
-		// $state = $crud->getState();
-		// $state_info = $crud->getStateInfo();
-
-		// if($state == 'add') {
-		// 	print_r($state);
-		// }
-		// elseif($state == 'list') {
-		// 	print_r($state);
-		// }
-
+		$crud->set_relation('vcnt_categoria', 'vac_categoria', 'vac_cat_value');
 		$crud->set_relation('vcnt_estado', 'estados', 'std_nombre');
 		$crud->set_relation('vcnt_ciudad', 'municipios', 'mncps_nombre');
-		$crud->set_relation('vcnt_categoria', 'vac_categorias', 'vac_cat_value');
-		$crud->set_relation('vcnt_jornada', 'vac_jornada', 'vac_jorn_value');
+		$crud->set_relation('vcnt_jornada', 'vac_jornada', 'vac_jorn_value',null,'vac_jorn_id');
+		$crud->set_relation('vcnt_contrato','vac_contrato','vac_cont_value', null, 'vac_cont_id ASC');
+		$crud->set_relation('vcnt_experiencia','vac_experiencia','vac_expe_value', null, 'vac_expe_id ASC');
 		$crud->set_relation('vcnt_educacion', 'vac_educacion', 'vac_educ_value', null, 'vac_educ_id ASC');
+		
+		$crud->set_rules('vcnt_titulo','Titulo','trim|required|xss_clean|min_length[4]');
+		$crud->set_rules('vcnt_categoria','Categoria','trim|required|xss_clean');
+		$crud->set_rules('vcnt_descripcion','Descripción','trim|required|xss_clean|min_length[10]');
+		$crud->set_rules('vcnt_estado','Estado','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_ciudad','Ciudad','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_jornada','Jornada Laboral','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_contrato','Tipo de Contratación','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_sueldo','Sueldo','trim|numeric|required|xss_clean');
+		$crud->set_rules('vcnt_sueldo_convenir','Mostrar el salario "A convenir"','trim|integer|xss_clean');
+		$crud->set_rules('vcnt_cantidad','Cantidad de vacantes','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_experiencia','Años de experiencia similar','trim|integer|required|xss_clean');
+		$crud->set_rules('vcnt_educacion','Estudios mínimos','trim|integer|required|xss_clean');
+
+		if($state == 'add') {
+			$fechaHoy = date('Y-m-d H:i:s',now()+3600);
+			$id_gestor = $this->session->userdata['gstr_id'];
+			$crud->add_fields(
+				'separador_dg',
+				'vcnt_status',
+				'vcnt_fecha',
+				'vcnt_titulo',
+				'vcnt_categoria',
+				'vcnt_descripcion',
+				'vcnt_estado',
+				'vcnt_ciudad',
+				'vcnt_jornada',
+				'vcnt_contrato',
+				'vcnt_sueldo',
+				'vcnt_sueldo_convenir',
+				'vcnt_fecha_contratacion',
+				'vcnt_cantidad',
+				'separador_req',
+				'vcnt_experiencia',
+				'vcnt_rango_edad_a',
+				// 'vcnt_rango_edad_b',
+				'vcnt_educacion',
+				'vcnt_idiomas',
+				'vcnt_licencia',
+				'vcnt_viajar',
+				'vcnt_residencia',
+				'vcnt_discapacidad',
+				'vcnt_requisitos',
+				'vcnt_oferta',
+				'vcnt_horario',
+				'vcnt_gestor_id'
+			);
+
+			$crud->display_as(
+				array(
+					'separador_dg'=>'Datos Generales',
+					'separador_req'=>'Requisitos'
+				)
+			);
+
+			$crud->field_type('vcnt_status', 'hidden', TRUE);
+			$crud->field_type('vcnt_sueldo', 'integer');
+			// $crud->field_type('vcnt_cantidad','enum', range(1, 9));
+			$crud->field_type('vcnt_fecha', 'hidden', $fechaHoy);
+			$crud->field_type('vcnt_gestor_id', 'hidden', $id_gestor);
+
+			$crud->callback_add_field('separador_dg', array($this, 'func_separador'));
+			$crud->callback_add_field('separador_req', array($this, 'func_separador'));
+			$crud->callback_add_field('vcnt_sueldo', function () {
+				return '<input id="field-vcnt_sueldo" name="vcnt_sueldo" type="text" value="" class="numeric form-control" maxlength="11" style="width:120px;display:inline-block;">&nbsp;&nbsp;<span class="alert alert-warning"><i class="glyphicon glyphicon-exclamation-sign"></i> Inserta el salario sin puntos ni comas</span>';
+			});
+			$crud->callback_add_field('vcnt_rango_edad_a', function () {
+				return 'de <input id="field-vcnt_rango_edad_a" name="vcnt_rango_edad_a" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;">&nbsp;a&nbsp;<input id="field-vcnt_rango_edad_b" name="vcnt_rango_edad_b" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;"> a&ntilde;os';
+			});
+
+			$crud->required_fields(
+				'vcnt_titulo',
+				'vcnt_descripcion',
+				'vcnt_estado',
+				'vcnt_ciudad',
+				'vcnt_categoria',
+				'vcnt_sueldo',
+				'vcnt_jornada',
+				'vcnt_contrato',
+				'vcnt_cantidad',
+				'vcnt_educacion',
+				'vcnt_experiencia',
+				'vcnt_viajar',
+				'vcnt_residencia',
+				'vcnt_discapacidad'
+			);
+		}
+
+		elseif($state == 'edit') {
+
+			$id_vacante = $state_info->primary_key;
+			$vacante = $this->gestion_model->getVacantes($id_vacante);
+
+			$id_gestor_en_vacante = $vacante[0]->vcnt_gestor_id;
+			$id_gestor = $this->session->userdata['gstr_id'];
+			
+			if ($id_gestor_en_vacante!=$id_gestor) {
+				redirect(site_url().'gestion','refresh');
+			}
+			
+			$crud->edit_fields(
+				'separador_dg',
+				'vcnt_status',
+				'vcnt_fecha',
+				'vcnt_titulo',
+				'vcnt_categoria',
+				'vcnt_descripcion',
+				'vcnt_estado',
+				'vcnt_ciudad',
+				'vcnt_jornada',
+				'vcnt_contrato',
+				'vcnt_sueldo',
+				'vcnt_sueldo_convenir',
+				'vcnt_fecha_contratacion',
+				'vcnt_cantidad',
+				'separador_req',
+				'vcnt_experiencia',
+				'vcnt_rango_edad_a',
+				'vcnt_educacion',
+				'vcnt_idiomas',
+				'vcnt_licencia',
+				'vcnt_viajar',
+				'vcnt_residencia',
+				'vcnt_discapacidad',
+				'vcnt_requisitos',
+				'vcnt_oferta',
+				'vcnt_horario'
+			);
+
+			$crud->display_as(
+				array(
+					'separador_dg'=>'Datos Generales',
+					'separador_req'=>'Requisitos',
+					'vcnt_status'=>'Visible?',
+					'vcnt_fecha'=>'Fecha y hora de creación'
+				)
+			);
+
+			$crud->field_type('vcnt_fecha','readonly');
+			$crud->callback_edit_field('separador_dg', array($this, 'func_separador'));
+			$crud->callback_edit_field('separador_req', array($this, 'func_separador'));
+			$crud->callback_edit_field('vcnt_sueldo', function ($sueldo) {
+				return '<input id="field-vcnt_sueldo" name="vcnt_sueldo" type="text" value="'.$sueldo.'" class="numeric form-control" maxlength="11" style="width:120px;display:inline-block;">&nbsp;&nbsp;<span class="alert alert-warning"><i class="glyphicon glyphicon-exclamation-sign"></i> Inserta el salario sin puntos ni comas</span>';
+			});
+			$this->rango_b = $vacante[0]->vcnt_rango_edad_b;
+			$crud->callback_edit_field('vcnt_rango_edad_a', function ($rango_a) {
+				return 'de <input id="field-vcnt_rango_edad_a" name="vcnt_rango_edad_a" type="text" value="'.$rango_a.'" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;">&nbsp;a&nbsp;<input id="field-vcnt_rango_edad_b" name="vcnt_rango_edad_b" type="text" value="'.$this->rango_b.'" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;"> a&ntilde;os';
+			});
+
+			$crud->required_fields(
+				'vcnt_titulo',
+				'vcnt_descripcion',
+				'vcnt_estado',
+				'vcnt_ciudad',
+				'vcnt_categoria',
+				'vcnt_sueldo',
+				'vcnt_jornada',
+				'vcnt_contrato',
+				'vcnt_cantidad',
+				'vcnt_educacion',
+				'vcnt_experiencia',
+				'vcnt_viajar',
+				'vcnt_residencia',
+				'vcnt_discapacidad'
+			);
+		}
 
 		$this->load->library('Gc_dependent_select');
 
@@ -74,7 +266,7 @@ class Gestion extends CI_Controller {
 			'url' => base_url() . __CLASS__ . '/' . __FUNCTION__ . '/'
 		);
 
-		$categories = new gc_dependent_select($crud, $fields, $config);
+		$categories = new Gc_dependent_select($crud, $fields, $config);
 		$js = $categories->get_js();
 		$output = $crud->render();
 		$output->output.= $js;
@@ -85,10 +277,14 @@ class Gestion extends CI_Controller {
 		$this->load->view('gestion/crud',compact('salida','titulo','menu'));
 	}
 
+	public function func_separador($value = null, $primary_key = null) {
+		return '&nbsp;';
+	}
+
 	public function acceso() {
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 		$this->form_validation->set_rules('password', 'Password', 'required'); 
-		
+
 		if($this->form_validation->run() == FALSE) {
 			$data['titulo'] = "Acceso de gestores | People Connection";
 			$this->load->view('gestion/header',$data);
@@ -253,7 +449,8 @@ class Gestion extends CI_Controller {
 				$this->session->set_userdata($key, $val);
 			}
 
-			redirect(site_url().'gestion/');
+			$this->session->set_flashdata('flash_message', 'Perfecto, tu registro esta completo, ahora solo que una administrador active tu cuenta.');
+			redirect(site_url().'gestion/acceso');
 		}
 	}
 
