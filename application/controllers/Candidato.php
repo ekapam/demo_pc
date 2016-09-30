@@ -54,18 +54,20 @@ class Candidato extends CI_Controller {
 	
 	public function registro() {
 
-		$this->form_validation->set_rules('firstname', 'First Name', 'required');
-		$this->form_validation->set_rules('lastname', 'Last Name', 'required');
+		$this->form_validation->set_rules('firstname', 'Nombre(s)', 'required');
+		$this->form_validation->set_rules('lastname', 'Apellidos', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		if ($this->form_validation->run() == FALSE) {
 			$data['titulo'] = "Registro de Candidato";
-			$this->load->view('candidato/header',$data);
-			$this->load->view('candidato/register');
-			$this->load->view('candidato/footer');
+			$data['gapi'] = TRUE;
+			$this->load->view('header',$data);
+			$this->load->view('menu');
+			$this->load->view('candidato/registro');
+			$this->load->view('footer',$data);
 		}
 		else {
-			if($this->candidato_model->isDuplicate($this->input->post('email'))){
+			if ($this->candidato_model->isDuplicate($this->input->post('email'))){
 				$this->session->set_flashdata('flash_message', 'El email ingresado ya esta registrado.');
 				redirect(site_url().'candidato/acceso');
 			}

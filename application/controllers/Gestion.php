@@ -99,6 +99,9 @@ class Gestion extends CI_Controller {
 				'vcnt_titulo',
 				'vcnt_categoria',
 				'vcnt_descripcion',
+				'vcnt_requisitos',
+				'vcnt_oferta',
+				'vcnt_horario',
 				'vcnt_estado',
 				'vcnt_ciudad',
 				'vcnt_jornada',
@@ -110,16 +113,12 @@ class Gestion extends CI_Controller {
 				'separador_req',
 				'vcnt_experiencia',
 				'vcnt_rango_edad_a',
-				// 'vcnt_rango_edad_b',
 				'vcnt_educacion',
 				'vcnt_idiomas',
 				'vcnt_licencia',
 				'vcnt_viajar',
 				'vcnt_residencia',
 				'vcnt_discapacidad',
-				'vcnt_requisitos',
-				'vcnt_oferta',
-				'vcnt_horario',
 				'vcnt_gestor_id'
 			);
 
@@ -143,6 +142,19 @@ class Gestion extends CI_Controller {
 			});
 			$crud->callback_add_field('vcnt_rango_edad_a', function () {
 				return 'de <input id="field-vcnt_rango_edad_a" name="vcnt_rango_edad_a" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;">&nbsp;a&nbsp;<input id="field-vcnt_rango_edad_b" name="vcnt_rango_edad_b" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;"> a&ntilde;os';
+			});
+			$crud->callback_add_field('vcnt_licencia', function () {
+				return '
+				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="1">
+				<span>A</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="2">
+				<span>B</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="3">
+				<span>C</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="4">
+				<span>D</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="5">
+				<span>Sin permiso</span>';
 			});
 
 			$crud->required_fields(
@@ -182,6 +194,9 @@ class Gestion extends CI_Controller {
 				'vcnt_titulo',
 				'vcnt_categoria',
 				'vcnt_descripcion',
+				'vcnt_requisitos',
+				'vcnt_oferta',
+				'vcnt_horario',
 				'vcnt_estado',
 				'vcnt_ciudad',
 				'vcnt_jornada',
@@ -198,10 +213,7 @@ class Gestion extends CI_Controller {
 				'vcnt_licencia',
 				'vcnt_viajar',
 				'vcnt_residencia',
-				'vcnt_discapacidad',
-				'vcnt_requisitos',
-				'vcnt_oferta',
-				'vcnt_horario'
+				'vcnt_discapacidad'
 			);
 
 			$crud->display_as(
@@ -312,8 +324,8 @@ class Gestion extends CI_Controller {
 		
 	public function registro() {
 
-		$this->form_validation->set_rules('firstname', 'First Name', 'required');
-		$this->form_validation->set_rules('lastname', 'Last Name', 'required');
+		$this->form_validation->set_rules('firstname', 'Nombre(s)', 'required');
+		$this->form_validation->set_rules('lastname', 'Apellidos', 'required');
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 
 		if ($this->form_validation->run() == FALSE) {

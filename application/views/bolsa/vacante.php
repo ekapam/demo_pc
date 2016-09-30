@@ -1,7 +1,7 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); $vacante = $vacante[0]; ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); $vacante = $vacante[0]; // print_r($vacante); ?>
 <!-- Vacante -->
 
-	<div class="container conocenos">
+	<div class="container vacante">
 		
 		<div class="clearfix">&nbsp;</div>
 
@@ -16,7 +16,19 @@
 					<div class="col-lg-14 col-md-14 col-sm-13">
 						<div id="main-datos" class="well">
 							<h1><?php echo $vacante->vcnt_titulo; ?></h1>
-							<p><?php echo $vacante->vcnt_descripcion; ?></p>
+							<?php echo $vacante->vcnt_descripcion; ?>
+<?php if (isset($vacante->vcnt_requisitos)) : ?>
+							<h2>Requisitos:</h2>
+							<?php echo $vacante->vcnt_requisitos; ?>
+<?php endif; ?>
+<?php if (isset($vacante->vcnt_oferta)) : ?>
+							<h2>Ofrecemos:</h2>
+							<?php echo $vacante->vcnt_oferta; ?>
+<?php endif;?>
+<?php if (isset($vacante->vcnt_horario)) : ?>
+							<h2>Horario de trabajo:</h2>
+							<?php echo $vacante->vcnt_horario; ?>
+<?php endif; ?>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-7">

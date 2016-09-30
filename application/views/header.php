@@ -43,12 +43,16 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 	<link rel="stylesheet" href="assets/css/demo.css">
-<?php if (isset($calendario) && $calendario == TRUE) : ?>
 
+<?php if (isset($calendario) && $calendario == TRUE) : ?>
 	<!-- jQuery Calendar -->
 	<link rel="stylesheet" href="assets/css/calendar.css">
-
+<?php endif; if(isset($gapi) && $gapi ==  TRUE) : ?>
+	<!-- Google API -->
+	<meta name="google-signin-scope" content="profile email">
+	<meta name="google-signin-client_id" content="552716568155-u53glfqturjkuksaqqohnt1vv6in00ps.apps.googleusercontent.com">
 <?php endif; ?>
+
 </head>
 
 <body onResize="checkWidth();">

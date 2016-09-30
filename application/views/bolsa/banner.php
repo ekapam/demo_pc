@@ -1,7 +1,7 @@
 <!-- Banner  -->
 
 	<div class="container bolsa">
-		<div class="row text-center">
+		<!-- <div class="row text-center">
 			<div class="col-lg-20">
 				<div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
 					<h1>Bolsa de Trabajo</h1>
@@ -10,7 +10,7 @@
 			</div>
 		</div>
 
-		<div class="clearfix hidden-xs">&nbsp;</div>
+		<div class="clearfix hidden-xs">&nbsp;</div> -->
 
 		<!-- <div class="row">
 			<div class="col-lg-5 col-md-5 col-sm-5">
@@ -27,22 +27,24 @@
 				</div>
 			</div>
 		</div> -->
+	</div>
 
+	<div class="container-fluid" id="container_carrusel_bolsa">
 		<div id="CarruselBolsa" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner" role="listbox">
 
-				<div id="slide03" class="item">
+				<div id="slide01" class="item active">
 					<img class="full-width" src="assets/img/banner03.jpg" alt="Sube tu CV y obten tu empleo deseado">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>Sube tu CV y encuentra el empleo deseado</h1>
-							<p class="hidden-xs">Registrate gratis, sube tu CV o busca dentro de nuestra:</p>
-							<p><a id="btn-crsl03" class="btn btn-primary" href="bolsa-de-trabajo" role="button">Bolsa de Trabajo</a></p>
+							<p class="hidden-xs">Registrate gratis, sube tu CV y busca dentro de nuestra bolsa.</p>
+							<p><a id="btn-crsl03" class="btn btn-primary" href="candidato/registro" role="button">Registra tu CV</a></p>
 						</div>
 					</div>
 				</div>
 
-				<div id="slide06" class="item active">
+				<div id="slide02" class="item">
 					<img class="full-width pull-right" src="assets/img/banner06.jpg" alt="Atención para Empresas">
 					<div class="container">
 						<div class="carousel-caption">
@@ -64,5 +66,8 @@
 				<span class="sr-only">Siguiente</span>
 			</a>
 		</div>
+	</div>
+
+	<div class="container">
 
 <!-- Fin Banner -->

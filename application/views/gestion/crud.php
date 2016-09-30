@@ -23,6 +23,7 @@
 	#crudForm > div > div > div.pretty-radio-buttons > div.radio { display: inline-block; margin-right: 10px; }
 	.form-control { display: inline-block; width: 50%; }
 	#field-vcnt_cantidad { width: 55px; }
+	#field-vcnt_fecha_contratacion { width: 280px; }
 	</style>
 </head>
 <body>
