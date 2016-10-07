@@ -4,6 +4,102 @@
 		"selected_items":
 		[
 			[
+				"vcnt_",
+				"vcnt_categoria"
+			],
+			[
+				"vcnt_ca",
+				"vcnt_categoria"
+			],
+			[
+				"db",
+				"db_where	CI - Active Record DB Where"
+			],
+			[
+				"vac_idio",
+				"vac_idiomas_nivel_id"
+			],
+			[
+				"vcnt_idiomas",
+				"vcnt_idiomas_nivel"
+			],
+			[
+				"vac_idioma",
+				"vac_idiomas_id"
+			],
+			[
+				"vac_educ",
+				"vac_educ_id"
+			],
+			[
+				"vac_exp",
+				"vac_expe_id"
+			],
+			[
+				"vac_cont_",
+				"vac_cont_id"
+			],
+			[
+				"vac_jorn",
+				"vac_jorn_id"
+			],
+			[
+				"vac_idiom",
+				"vac_idiomas_nivel"
+			],
+			[
+				"vac_idiomas",
+				"vac_idiomas"
+			],
+			[
+				"vac_jor",
+				"vac_jornada"
+			],
+			[
+				"prm",
+				"primary_key"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"optio",
+				"options"
+			],
+			[
+				"vac_idi",
+				"vac_idiomas_value"
+			],
+			[
+				"arra",
+				"in_array"
+			],
+			[
+				"array",
+				"array_map"
+			],
+			[
+				"oo",
+				"options"
+			],
+			[
+				"PHP",
+				"PHP_EOL"
+			],
+			[
+				"ot",
+				"options"
+			],
+			[
 				"s",
 				"script	Tag"
 			],
@@ -60,14 +156,6 @@
 				"gestor_id"
 			],
 			[
-				"vac_jorn",
-				"vac_jorn_value"
-			],
-			[
-				"db",
-				"db_limit	CI - Active Record DB Helper Functions"
-			],
-			[
 				"mns",
 				"mncps_nombre"
 			],
@@ -114,10 +202,6 @@
 			[
 				"vac_edu",
 				"vac_educacion"
-			],
-			[
-				"vcnt_",
-				"vcnt_fecha"
 			],
 			[
 				"vcnt",
@@ -180,10 +264,6 @@
 				"resultado_obj"
 			],
 			[
-				"arra",
-				"array"
-			],
-			[
 				"resul",
 				"resultado"
 			],
@@ -202,10 +282,6 @@
 			[
 				"displa",
 				"display_as"
-			],
-			[
-				"for",
-				"foreach	foreach …"
 			],
 			[
 				"Hom",
@@ -360,10 +436,6 @@
 				"telefono"
 			],
 			[
-				"op",
-				"option	Tag"
-			],
-			[
 				"cont",
 				"contacto"
 			],
@@ -442,112 +514,40 @@
 			[
 				"terce",
 				"Tercerización"
-			],
-			[
-				"c",
-				"color"
-			],
-			[
-				"For",
-				"Formucontacto"
-			],
-			[
-				"stre",
-				"strokeColor"
-			],
-			[
-				"str",
-				"strokeWidth"
-			],
-			[
-				"bo",
-				"border"
-			],
-			[
-				"temp",
-				"template_url"
-			],
-			[
-				"backg",
-				"background-image"
-			],
-			[
-				"n",
-				"none"
-			],
-			[
-				"paddi",
-				"padding"
-			],
-			[
-				"panel",
-				"panel-heading"
-			],
-			[
-				"i",
-				"italic"
-			],
-			[
-				"font-s",
-				"font-style"
-			],
-			[
-				"bt",
-				"btn-collapse-reclu"
-			],
-			[
-				"send",
-				"sendmail"
-			],
-			[
-				"foru",
-				"formuContacto"
-			],
-			[
-				"form",
-				"formuContacto"
-			],
-			[
-				"li",
-				"li	Tag"
-			],
-			[
-				"padd",
-				"padding"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application/controllers/Candidato.php",
+			"file": "application/controllers/Bolsa.php",
 			"settings":
 			{
-				"buffer_size": 14558,
+				"buffer_size": 3331,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/Bolsa_model.php",
+			"settings":
+			{
+				"buffer_size": 3355,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/bolsa/vacante.php",
+			"settings":
+			{
+				"buffer_size": 3983,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/views/candidato/registro.php",
+			"file": "assets/css/demo.css",
 			"settings":
 			{
-				"buffer_size": 1686,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/footer.php",
-			"settings":
-			{
-				"buffer_size": 5512,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/header.php",
-			"settings":
-			{
-				"buffer_size": 4589,
+				"buffer_size": 35908,
 				"line_ending": "Windows"
 			}
 		}
@@ -576,22 +576,25 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
+		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
+		"/C/xampp/htdocs/demo/application/views/header.php",
+		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
+		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/spanish.php",
+		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
+		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
+		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
+		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
+		"/C/xampp/htdocs/demo/application/views/footer.php",
+		"/C/xampp/htdocs/demo/application/views/candidato/registro.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/footer.php",
 		"/C/xampp/htdocs/demo/application/controllers/Contacto.php",
-		"/C/xampp/htdocs/demo/application/views/header.php",
-		"/C/xampp/htdocs/demo/application/views/footer.php",
 		"/C/xampp/htdocs/demo/assets/js/contacto.js",
-		"/C/xampp/htdocs/demo/application/controllers/Candidato.php",
-		"/C/xampp/htdocs/demo/application/views/candidato/registro.php",
 		"/C/xampp/htdocs/demo/assets/css/demo.css",
 		"/C/xampp/htdocs/demo/application/controllers/Formulario.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/header.php",
 		"/C/xampp/htdocs/demo/application/views/mapa.php",
-		"/C/xampp/htdocs/demo/application/controllers/Gestion.php",
-		"/C/xampp/htdocs/demo/application/controllers/Bolsa.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/crud.php",
-		"/C/xampp/htdocs/demo/application/models/Bolsa_model.php",
-		"/C/xampp/htdocs/demo/application/views/bolsa/vacante.php",
 		"/C/xampp/htdocs/demo/application/views/bolsa/header.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/header.php",
 		"/C/xampp/htdocs/demo/application/views/vacante.php",
@@ -609,7 +612,6 @@
 		"/C/xampp/htdocs/blog/application/config/database.php",
 		"/C/xampp/htdocs/blog/application/config/config.php",
 		"/C/Users/rambriz/Desktop/ci_sessions-data.bin",
-		"/C/xampp/htdocs/demo/application/models/Gestion_model.php",
 		"/C/xampp/htdocs/job/application/config/config.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/add.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/edit.php",
@@ -620,9 +622,7 @@
 		"/C/xampp/htdocs/demo/application/models/Candidato_model.php",
 		"/C/xampp/htdocs/demo/application/libraries/Grocery_CRUD.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/themes/bootstrap/views/list.php",
-		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/spanish.php",
 		"/C/xampp/htdocs/demo/assets/grocery_crud/languages/english.php",
-		"/C/xampp/htdocs/demo/application/views/gestion/menu.php",
 		"/C/xampp/htdocs/demo/application/views/menu.php",
 		"/C/xampp/htdocs/demo/application/views/candidato/index.php",
 		"/C/xampp/htdocs/demo/application/views/gestion/footer.php",
@@ -730,6 +730,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			", 0)",
+			"'0'",
+			"NULL",
+			"`",
+			"vac_idiomas_nivel_id",
+			"field_type",
+			"Ocurrio un error al actualizar.",
+			"func_idiomas",
+			"getVacantes",
+			"func_idiomas",
+			"getVacantes",
 			"vcnt_rango_edad_a",
 			"rango_b",
 			"gestion",
@@ -846,18 +857,7 @@
 			"acceso",
 			"fontawesome",
 			"font-awesome",
-			"awesome",
-			"font-awesome",
-			"font-awesome.css",
-			"fontawesome-webfont.woff?v=4.6.3",
-			"servicio",
-			"title_year",
-			"event-tooltip-content",
-			"México",
-			"col-xs",
-			"col",
-			"col-xs-",
-			"month-container"
+			"awesome"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -865,6 +865,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			", NULL)",
+			"0",
+			"",
 			"vacante",
 			"field-vcnt_licencia",
 			"CarruselBolsa",
@@ -989,10 +992,7 @@
 			"img-responsive center-block",
 			"telefonos",
 			"<path id",
-			"<path group",
-			"<div class=\"col-lg-13 col-md-13 col-sm-13\">",
-			"fadeInUp",
-			"fadeInDown"
+			"<path group"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1003,23 +1003,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/controllers/Candidato.php",
+					"file": "application/controllers/Bolsa.php",
 					"settings":
 					{
-						"buffer_size": 14558,
+						"buffer_size": 3331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2223,
-								2223
+								3324,
+								3324
 							]
 						],
 						"settings":
@@ -1028,25 +1028,54 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "application/views/candidato/registro.php",
+					"file": "application/models/Bolsa_model.php",
 					"settings":
 					{
-						"buffer_size": 1686,
+						"buffer_size": 3355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1667,
-								1667
+								1683,
+								1683
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/bolsa/vacante.php",
+					"settings":
+					{
+						"buffer_size": 3983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1612,
+								1612
 							]
 						],
 						"settings":
@@ -1061,56 +1090,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/views/footer.php",
-					"settings":
-					{
-						"buffer_size": 5512,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5480,
-								5480
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1326.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "application/views/header.php",
+					"file": "assets/css/demo.css",
 					"settings":
 					{
-						"buffer_size": 4589,
+						"buffer_size": 35908,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3953,
-								3953
+								19397,
+								19397
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.0,
+						"translation.y": 7009.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1173,7 +1174,7 @@
 		[
 			[
 				"",
-				"/C/xampp/htdocs/cinco/cinco.sublime-project"
+				"/C/xampp/htdocs/grocerycrud/grocerycrud.sublime-project"
 			]
 		],
 		"width": 380.0

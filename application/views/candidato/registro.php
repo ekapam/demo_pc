@@ -28,7 +28,7 @@
 				<?php echo form_submit(array('value'=>'Crear cuenta', 'class'=>'btn btn-lg btn-primary btn-block')); ?>
 				<?php echo form_close(); ?>
 				<p><br>Al hacer clic en "Crear cuenta", aceptas las <a href="candidato/aviso">Condiciones legales</a> y la <a href="candidato/privacidad">Política de privacidad</a>.</p>
-				<div>&nbsp;</div>
-				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				<!-- <div>&nbsp;</div>
+				<div class="g-signin2" data-onsuccess="onSignIn"></div> -->
 			</div>
 		</div>

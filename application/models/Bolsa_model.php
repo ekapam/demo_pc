@@ -64,21 +64,23 @@ class Bolsa_model extends CI_Model {
 			vcnt_status,
 			vcnt_fecha,
 			vcnt_titulo,
-			GROUP_CONCAT(vac_categoria.vac_cat_value) as vcnt_categoria,
+			IF (vcnt_categoria > 0, vcnt_categoria=10, GROUP_CONCAT(vac_categoria.vac_cat_value)) as vcnt_categoria,
 			vcnt_descripcion,
 			vcnt_requisitos,
 			vcnt_oferta,
 			vcnt_horario,
-			GROUP_CONCAT(estados.std_nombre) as vcnt_estado,
-			GROUP_CONCAT(municipios.mncps_nombre) as vcnt_ciudad,
-			GROUP_CONCAT(vac_jornada.vac_jorn_value) as vcnt_jornada,
-			GROUP_CONCAT(vac_contrato.vac_cont_value) as vcnt_contrato,
+			IF (vcnt_estado > 0, GROUP_CONCAT(estados.std_nombre), NULL) as vcnt_estado,
+			IF (vcnt_ciudad > 0, GROUP_CONCAT(municipios.mncps_nombre), NULL) as vcnt_ciudad,
+			IF (vcnt_jornada > 0, GROUP_CONCAT(vac_jornada.vac_jorn_value), NULL) as vcnt_jornada,
+			IF (vcnt_contrato > 0, GROUP_CONCAT(vac_contrato.vac_cont_value), NULL) as vcnt_contrato,
 			vcnt_sueldo,
 			vcnt_sueldo_convenir,
 			vcnt_cantidad,
-			GROUP_CONCAT(vac_experiencia.vac_expe_value) as vcnt_experiencia,
-			GROUP_CONCAT(vac_educacion.vac_educ_value) as vcnt_educacion,
-			vcnt_idiomas
+			IF (vcnt_experiencia > 0, GROUP_CONCAT(vac_experiencia.vac_expe_value), NULL) as vcnt_experiencia,
+			IF (vcnt_educacion > 0, GROUP_CONCAT(vac_educacion.vac_educ_value), NULL) as vcnt_educacion,
+			IF (vcnt_idiomas > 0, GROUP_CONCAT(vac_idiomas.vac_idiomas_value), NULL) as vcnt_idiomas,
+			IF (vcnt_idiomas_nivel > 0, GROUP_CONCAT(vac_idiomas_nivel.vac_idiomas_nivel_value), NULL) as vcnt_idiomas_nivel,
+			IF (vcnt_licencia > 0, GROUP_CONCAT(vac_licencia.vac_licencia_value), NULL) as vcnt_licencia
 			');
 		$this->db->from('
 			vacantes,
@@ -87,19 +89,25 @@ class Bolsa_model extends CI_Model {
 			vac_educacion,
 			vac_experiencia,
 			vac_jornada,
+			vac_idiomas,
+			vac_idiomas_nivel,
+			vac_licencia,
 			estados,
 			municipios
 		');
-		$this->db->where('
-			vcnt_id='.$id.' AND
+		$this->db->where("
+			vcnt_id='".$id."' AND
 			vcnt_categoria=vac_cat_id AND
 			vcnt_estado=std_id AND
 			vcnt_ciudad=mncps_id AND
 			vcnt_jornada=vac_jorn_id AND
 			vcnt_contrato=vac_cont_id AND
 			vcnt_experiencia=vac_expe_id AND
-			vcnt_educacion=vac_educ_id
-		');
+			vcnt_educacion=vac_educ_id AND
+			vcnt_idiomas=vac_idiomas_id AND
+			vcnt_idiomas_nivel=vac_idiomas_nivel_id AND
+			vcnt_licencia=vac_licencia_id
+		");
 		$query = $this->db->get();
 		return $query->result();
 	}

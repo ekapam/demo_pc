@@ -55,7 +55,7 @@
 
 </head>
 
-<body onResize="checkWidth();">
+<body>
 
 	<div id="outdated">
 		<h6>Su navegador esta desactualizado!</h6>

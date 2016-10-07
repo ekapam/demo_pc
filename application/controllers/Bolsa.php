@@ -68,23 +68,24 @@ class Bolsa extends CI_Controller {
 	public function vacante($id = NULL) {
 		$id = $this->uri->segment(3);
 
-		if ($id != "") {
+		// if ($id != "") {
 			$resultado = $this->Bolsa_model->getVacante($id);
-			if ($resultado != false) {
-				if($resultado[0]->vcnt_status==TRUE){
-					// print_r($resultado[0]->vcnt_status);
+			print_r($resultado);
+		// 	if ($resultado != false) {
+		// 		if($resultado[0]->vcnt_status==TRUE){
+		// 			// print_r($resultado[0]->vcnt_status);
 					$data['vacante'] = $resultado;
-				}
-				else{
-					header("HTTP/1.1 404 Not Found");
-					redirect('bolsa-de-trabajo','refresh');
-				}
-			}
-			else {
-				header("HTTP/1.1 404 Not Found");
-			    redirect('bolsa-de-trabajo','refresh');
-			}
-		}
+		// 		}
+		// 		else{
+		// 			header("HTTP/1.1 404 Not Found");
+		// 			redirect('bolsa-de-trabajo','refresh');
+		// 		}
+		// 	}
+		// 	else {
+		// 		header("HTTP/1.1 404 Not Found");
+		// 	    redirect('bolsa-de-trabajo','refresh');
+		// 	}
+		// }
 
 		$titulo = $data['vacante'][0]->vcnt_titulo;
 

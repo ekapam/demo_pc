@@ -54,7 +54,8 @@ class Gestion extends CI_Controller {
 				'vcnt_experiencia'=>'Años de experiencia similar',
 				'vcnt_rango_edad_a' => 'Rango de Edad',
 				'vcnt_educacion'=>'Estudios mínimos',
-				'vcnt_idiomas'=>'Idiomas',
+				'vcnt_idiomas'=>'Idioma',
+				'vcnt_idiomas_nivel'=>'Nivel de idioma',
 				'vcnt_licencia' => 'Licencia de conducir',
 				'vcnt_viajar' => 'Disponibilidad para viajar',
 				'vcnt_residencia' => 'Disponiblidad para cambiar de residencia',
@@ -75,6 +76,8 @@ class Gestion extends CI_Controller {
 		$crud->set_relation('vcnt_contrato','vac_contrato','vac_cont_value', null, 'vac_cont_id ASC');
 		$crud->set_relation('vcnt_experiencia','vac_experiencia','vac_expe_value', null, 'vac_expe_id ASC');
 		$crud->set_relation('vcnt_educacion', 'vac_educacion', 'vac_educ_value', null, 'vac_educ_id ASC');
+		$crud->set_relation('vcnt_idiomas', 'vac_idiomas', 'vac_idiomas_value', null, 'vac_idiomas_id ASC');
+		$crud->set_relation('vcnt_idiomas_nivel', 'vac_idiomas_nivel', 'vac_idiomas_nivel_value', null, 'vac_idiomas_nivel_id ASC');
 		
 		$crud->set_rules('vcnt_titulo','Titulo','trim|required|xss_clean|min_length[4]');
 		$crud->set_rules('vcnt_categoria','Categoria','trim|required|xss_clean');
@@ -115,6 +118,7 @@ class Gestion extends CI_Controller {
 				'vcnt_rango_edad_a',
 				'vcnt_educacion',
 				'vcnt_idiomas',
+				'vcnt_idiomas_nivel',
 				'vcnt_licencia',
 				'vcnt_viajar',
 				'vcnt_residencia',
@@ -143,19 +147,19 @@ class Gestion extends CI_Controller {
 			$crud->callback_add_field('vcnt_rango_edad_a', function () {
 				return 'de <input id="field-vcnt_rango_edad_a" name="vcnt_rango_edad_a" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;">&nbsp;a&nbsp;<input id="field-vcnt_rango_edad_b" name="vcnt_rango_edad_b" type="text" value="" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;"> a&ntilde;os';
 			});
-			$crud->callback_add_field('vcnt_licencia', function () {
-				return '
-				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="1">
-				<span>A</span>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="2">
-				<span>B</span>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="3">
-				<span>C</span>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="4">
-				<span>D</span>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="5">
-				<span>Sin permiso</span>';
-			});
+			// $crud->callback_add_field('vcnt_licencia', function () {
+			// 	return '
+			// 	<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="1">
+			// 	<span>A</span>&nbsp;&nbsp;&nbsp;&nbsp;
+			// 	<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="2">
+			// 	<span>B</span>&nbsp;&nbsp;&nbsp;&nbsp;
+			// 	<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="3">
+			// 	<span>C</span>&nbsp;&nbsp;&nbsp;&nbsp;
+			// 	<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="4">
+			// 	<span>D</span>&nbsp;&nbsp;&nbsp;&nbsp;
+			// 	<input id="field-vcnt_licencia" type="checkbox" name="vcnt_licencia" value="5">
+			// 	<span>Sin permiso</span>';
+			// });
 
 			$crud->required_fields(
 				'vcnt_titulo',
@@ -210,6 +214,7 @@ class Gestion extends CI_Controller {
 				'vcnt_rango_edad_a',
 				'vcnt_educacion',
 				'vcnt_idiomas',
+				'vcnt_idiomas_nivel',
 				'vcnt_licencia',
 				'vcnt_viajar',
 				'vcnt_residencia',
@@ -231,6 +236,7 @@ class Gestion extends CI_Controller {
 			$crud->callback_edit_field('vcnt_sueldo', function ($sueldo) {
 				return '<input id="field-vcnt_sueldo" name="vcnt_sueldo" type="text" value="'.$sueldo.'" class="numeric form-control" maxlength="11" style="width:120px;display:inline-block;">&nbsp;&nbsp;<span class="alert alert-warning"><i class="glyphicon glyphicon-exclamation-sign"></i> Inserta el salario sin puntos ni comas</span>';
 			});
+
 			$this->rango_b = $vacante[0]->vcnt_rango_edad_b;
 			$crud->callback_edit_field('vcnt_rango_edad_a', function ($rango_a) {
 				return 'de <input id="field-vcnt_rango_edad_a" name="vcnt_rango_edad_a" type="text" value="'.$rango_a.'" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;">&nbsp;a&nbsp;<input id="field-vcnt_rango_edad_b" name="vcnt_rango_edad_b" type="text" value="'.$this->rango_b.'" class="numeric form-control" maxlength="11" style="width:45px;display:inline-block;"> a&ntilde;os';
@@ -253,6 +259,8 @@ class Gestion extends CI_Controller {
 				'vcnt_discapacidad'
 			);
 		}
+
+		$crud->field_type('vcnt_licencia','multiselect', array("1"=>"Tipo A","2"=>"Tipo B","3"=>"Tipo C","4"=>"Tipo D","5"=>"Sin Licencia"));
 
 		$this->load->library('Gc_dependent_select');
 

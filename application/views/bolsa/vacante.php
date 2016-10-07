@@ -30,6 +30,11 @@
 							<?php echo $vacante->vcnt_horario; ?>
 <?php endif; ?>
 						</div>
+<?php if(!empty($vacante->vcnt_licencia)) : ?>
+						<div id="plus-datos" class="well">
+							<p>Licencias de conducir: <?php print_r($vacante->vcnt_licencia); ?></p>
+						</div>
+<?php endif; ?>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-7">
 						<div id="sidebar-datos" class="well">
@@ -66,7 +71,7 @@
 <?php if (!empty($vacante->vcnt_idiomas)) : ?>
 							<div class="clearfix">&nbsp;</div>
 							<div class="encabezado">Idioma requerido:</div>
-							<div class="datos"><?php echo $vacante->vcnt_idiomas; ?></div>
+							<div class="datos"><?php echo $vacante->vcnt_idiomas; ?> - <?php if (!empty($vacante->vcnt_idiomas_nivel)) { echo $vacante->vcnt_idiomas_nivel; } ?></div>
 <?php endif; ?>
 						</div>
 						<div id="sidebar-postulate" class="well">

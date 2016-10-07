@@ -560,6 +560,7 @@ li.dropdown.open {
 }
 
 .conocenos > div > div > div.col-lg-14 > #main-datos.well > h1 { margin-top: 0; }
+.conocenos > div > div > div.col-lg-14 > #plus-datos.well > h1 { margin-top: 0; }
 .conocenos > div > div > div.col-lg-6 > #sidebar-datos.well { border: none; background-image: none; background-color: #006495; }
 .conocenos > div > div > div.col-lg-6 > #sidebar-datos.well > .encabezado { color: #fff; font-weight: 800; }
 .conocenos > div > div > div.col-lg-6 > #sidebar-datos.well > .encabezado:before { font-size: 0.7em; content: "\e250"; margin-right: 2px; font-weight: normal; font-family: 'Glyphicons Halflings'; }
