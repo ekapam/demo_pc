@@ -1,5 +1,7 @@
-demo-pc.sublime-project
-demo-pc.sublime-workspace
+# Sublime Text Files #
+######################
+*.sublime-project
+*.sublime-workspace
 
 # Compiled source #
 ###################
